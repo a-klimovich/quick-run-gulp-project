@@ -9,3 +9,27 @@
   line-clamp: $visibleLineNumber;
   box-orient: vertical;
 }
+
+$breackpoint-trigger-xl: 1199.9px;
+$breackpoint-trigger-md: 767.9px;
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$breackpoint-trigger-xl}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$breackpoint-trigger-md}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media (max-width: ($screen + 'px')) {
+    @content;
+  }
+}

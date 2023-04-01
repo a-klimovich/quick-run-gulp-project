@@ -1,3 +1,92 @@
+@import '../../scss/mixins';
+
 .header {
   color: var(--white);
+
+  &__info {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr min-content;
+    gap: 40px;
+    font-weight: 800;
+    line-height: 20px;
+
+    @include xl {
+      padding: 10px 0;
+      font-size: 8px;
+      line-height: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr min-content 1fr;
+      gap: 12px;
+    }
+
+    .logo {
+      min-width: 217px;
+
+      @include xl {
+        min-width: 98px;
+      }
+    }
+
+    & > div:not(.social) {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 10px;
+      align-items: center;
+
+      @include xl {
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+
+    & > .social {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      @include xl {
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      @include md {
+        gap: 8px;
+      }
+      
+      a, button {
+        display: inline-block;
+        &:hover {
+          svg path {
+            fill: var(--cyan)
+          }
+        }
+      }
+
+      .show-mobile {
+        display: none;
+        @include md {
+          display: inline-block;
+        }
+      }
+    }
+
+    .btn-book-call {
+      display: none;
+
+      @include xl {
+        display: initial;
+      }
+      @include md {
+        display: none;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    place-items: center;
+  }
 }
