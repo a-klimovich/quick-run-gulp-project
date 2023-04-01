@@ -40,6 +40,7 @@ if (userIcon) {
   });
 
   const showPhoneBtn = document.querySelector("#show-phone-btn");
+  const openMobileMenuBtn = document.querySelector("#open-mobile-menu-btn");
   const mobileMenuHeadTitle = document.querySelector(".mobile-menu-head .title");
 
   showPhoneBtn.addEventListener("click", () => {
@@ -47,9 +48,15 @@ if (userIcon) {
     mobileMenuHeadTitle.innerHTML = "ТЕЛЕФОН";
   });
 
+  openMobileMenuBtn.addEventListener("click", () => {
+    header.classList.toggle("show-menu");
+    mobileMenuHeadTitle.innerHTML = "МЕНЮ";
+  });
+
   const mobileMenuCloseBtn = document.querySelector("#mobile-menu-closer");
 
   mobileMenuCloseBtn.addEventListener("click", () => {
     header.classList = "header";
   });
+
 })();

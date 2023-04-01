@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="container">
       <div class="header__info">
-        <button type="button" class="btn-burger">
+        <button type="button" id="open-mobile-menu-btn" class="btn-burger">
           <span class="btn-burger__line"></span>
         </button>
 
@@ -57,12 +57,27 @@
     <button type="button" id="mobile-menu-closer" class="closer">@@include('../../assets/svg/closer.svg')</button>
   </div>
 
-  <div class="bg-dark-blue">
+  <div class="menu-wrapper bg-dark-blue">
     <div class="container">
       <nav class="header__menu">
-        <ul>
-          <li><a href="#">КАТАЛОГ ТОВАРОВ</a></li>
-          <li><a href="#">О КОМПАНИИ</a></li>
+        <ul class="header__menu__list">
+          <li>
+            <a href="#">КАТАЛОГ ТОВАРОВ</a>
+
+            <!-- TODO -->
+            <!-- <ul>
+              <li><a href="#">РЕМОНТНЫЕ ПОРОГИ</a></li>
+              <li><a href="#">РЕМОНТНЫЕ АРКИ</a></li>
+              <li><a href="#">УСИЛИТЕЛЬ ПОЛА</a></li>
+              <li><a href="#">УСИЛИТЕЛЬ ПОРОГА</a></li>
+              <li><a href="#">НАКЛАДКА НА ДВЕРЬ</a></li>
+              <li><a href="#">ПОДДОМКРАТНИК</a></li>
+              <li><a href="#">ЛИСТ МЕТАЛЛА ДЛЯ СВАРКИ</a></li>
+            </ul> -->
+          </li>
+          <li>
+            <a href="#">О КОМПАНИИ</a>
+          </li>
           <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
           <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
