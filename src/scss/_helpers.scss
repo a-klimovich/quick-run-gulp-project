@@ -9,6 +9,16 @@
   }
 }
 
+.btn-burger {
+  @include burger;
+  display: none;
+
+  @include md {
+    display: block;
+    margin-right: 7px;
+  }
+}
+
 .bg-black {
   background-color: var(--black);
 }

@@ -1,15 +1,3 @@
-@mixin clampLine($visibleLineNumber) {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -moz-box;
-  -moz-box-orient: vertical;
-  display: -webkit-box;
-  -webkit-line-clamp: $visibleLineNumber;
-  -webkit-box-orient: vertical;
-  line-clamp: $visibleLineNumber;
-  box-orient: vertical;
-}
-
 $breackpoint-trigger-xl: 1199.9px;
 $breackpoint-trigger-md: 767.9px;
 
@@ -33,3 +21,75 @@ $breackpoint-trigger-md: 767.9px;
     @content;
   }
 }
+
+@mixin clampLine($visibleLineNumber) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: $visibleLineNumber;
+  -webkit-box-orient: vertical;
+  line-clamp: $visibleLineNumber;
+  box-orient: vertical;
+}
+
+@mixin burger {
+  $burger-width: 33px;
+  $burger-height: 25px;
+  $burger-line-height: 2px;
+  $this: &;
+
+  position: relative;
+  border: none;
+  padding: 0;
+  width: $burger-width;
+  height: $burger-height;
+  color: var(--orange);
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before,
+  &::after,
+  &__line {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: $burger-line-height;
+    background-color: currentColor;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    top: calc(100% - $burger-line-height);
+  }
+
+  &__line {
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &.active {
+    &::before {
+      top: 50%;
+      transform: rotate(45deg);
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+
+    &::after {
+      top: 50%;
+      transform: rotate(-45deg);
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+
+    & > span {
+      visibility: hidden;
+    }
+  }
+}
+
