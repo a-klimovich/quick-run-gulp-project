@@ -9,6 +9,18 @@
   }
 }
 
+.hide-mobile {
+  @include md {
+    display: none;
+  }
+}
+
+.hide-tablet {
+  @include xl {
+    display: none;
+  }
+}
+
 .btn-burger {
   @include burger;
   display: none;
@@ -21,6 +33,9 @@
 
 .bg-black {
   background-color: var(--black);
+}
+.bg-white {
+  background-color: var(--white);
 }
 .bg-dark-blue {
   background-color: var(--dark-blue);

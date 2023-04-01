@@ -36,7 +36,7 @@
             @@include("../../assets/svg/telegram.svg")
           </a>
 
-          <button type="button" class="show-mobile open-modal-btn">
+          <button type="button" id="show-phone-btn" class="show-mobile">
             @@include("../../assets/svg/phone-ellipse.svg")
           </button>
 
@@ -52,6 +52,11 @@
     </div>
   </div>
 
+  <div class="mobile-menu-head">
+    <div class="title">ТЕЛЕФОН</div>
+    <button type="button" id="mobile-menu-closer" class="closer">@@include('../../assets/svg/closer.svg')</button>
+  </div>
+
   <div class="bg-dark-blue">
     <div class="container">
       <nav class="header__menu">
@@ -62,7 +67,12 @@
           <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
   
-        <button class="btn btn--primary hide-tablet open-modal-btn">
+        <div class="header__menu__phone">
+          @@include("../../assets/svg/phone-ellipse.svg")
+          <a href="tel:+375447798877">+375 (44) 779–88–77</a>
+        </div>
+
+        <button class="btn btn--primary btn-header-menu-book-call open-modal-btn">
           ЗАКАЗАТЬ ЗВОНОК
         </button>
   

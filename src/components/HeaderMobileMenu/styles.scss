@@ -1,0 +1,20 @@
+.mobile-menu {
+  display: none;
+
+  &.open {
+    display: block;
+  }
+
+  &__head {
+    
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 25px 0 23px;
+
+    
+  }
+}

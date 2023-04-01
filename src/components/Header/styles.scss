@@ -135,17 +135,55 @@
         display: none;
       }
     }
+  }
 
-    .hide-mobile {
-      @include md {
-        display: none;
+  .btn-header-menu-book-call {
+    @include xl {
+      display: none;
+    }
+  }
+
+  .header__menu__phone {
+    display: none;
+    place-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+
+  .mobile-menu-head {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px 10px;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 20px;
+
+    .closer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+
+      svg {
+        width: 18px;
+        height: 18px;
       }
     }
+  }
 
-    .hide-tablet {
-      @include xl {
-        display: none;
-      }
+  &.show-phone {
+    .header__menu__phone,
+    .mobile-menu-head,
+    .btn-header-menu-book-call {
+      display: flex;
+    }
+
+    .header__menu {
+      flex-direction: column;
+      padding: 25px 0 23px;
     }
   }
 }
