@@ -9,10 +9,34 @@
   }
 }
 
-@for $i from 1 through 14 {
-  .py-#{$i} {
-    padding: calc(var(--base-padding) * #{$i}) 0;
+// @for $i from 1 through 14 {
+//   .py-#{$i} {
+//     padding: calc(var(--space) * #{$i}) 0;
+//   }
+// }
+.spaceY-md {
+  padding: var(--space-60);
+  @include xl {
+    padding: calc(var(--space-60) / 2);
   }
+  @include md {
+    padding: calc(var(--space-60) / 4);
+  }
+}
+
+.spaceY-lg {
+  padding: var(--space-140);
+  @include xl {
+    padding: calc(var(--space-140) / 2);
+  }
+  @include md {
+    padding: calc(var(--space-140) / 4);
+  }
+}
+
+
+.overflow-h {
+  overflow: hidden;
 }
 
 .hide-mobile {
@@ -35,6 +59,13 @@
     display: block;
     margin-right: 7px;
   }
+}
+
+.text-black {
+  color: var(--black);
+}
+.text-white {
+  color: var(--white);
 }
 
 .bg-black {

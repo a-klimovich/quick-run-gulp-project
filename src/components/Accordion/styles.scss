@@ -1,0 +1,21 @@
+.accordion {
+  .accordion-item {
+    .accordion-header {
+      cursor: pointer;
+      &:hover {
+        background-color: #eee;
+      }
+    }
+    .accordion-content {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    &.active {
+      .accordion-header {
+        background-color: #eee;
+      }
+    }
+  }
+}

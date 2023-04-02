@@ -27,7 +27,12 @@
   --backdrop-filter: blur(10px);
 
   // SPACES 
-  --base-padding: 10px;
+  --space-10: 10px;
+  --space-20: 20px;
+  --space-40: 40px;
+  --space-50: 50px;
+  --space-60: 60px;
+  --space-140: 140px;
 }
 
 body {
@@ -38,12 +43,26 @@ body {
   color: var(--black);
 }
 
-h1 {
+h1,
+.h1 {
   font-weight: 700;
 }
 
-h2 {
-  font-weight: 600;
+h2,
+.h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+
+  @include xl {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  @include md {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 button {

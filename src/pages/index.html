@@ -6,17 +6,81 @@
   @@include('../components/Header/index.html')
 
   <main>
-    <section class="bg-img-mian-section py-6">
+    <section class="bg-img-mian-section spaceY-md">
       <div class="container">
         @@include('../components/CarBodyParts/index.html')
+
+        <div class="main-search-form">
+          <!-- TODO custom select -->
+        </div>
       </div>
     </section>
-    <section class="py-12 bg-dark-blue bg-img-form-section">forms</section>
-    <section class="py-14 bg-img-list-section">list</section>
-    <section class="py-6 bg-dark-blue bg-img-about-us-section">about us</section>
-    <section class="py-14 bg-img-q-a-section">g&a</section>
-    <section class="py-6 bg-dark-blue bg-img-work-section">work</section>
-    <section class="py-14 bg-img-foto-section">photo</section>
+
+    <section class="section-form bg-dark-blue bg-img-form-section overflow-h">
+      <div class="container">
+        <div class="section-form__grid">
+          <div class="section-form__content text-white">
+            <h2>НЕ НАШЛИ СВОЙ АВТОМОБИЛЬ?</h2>
+            <div class="subtitle">Закажите звонок и мы перезвоним вам в ближайшее время.</div>
+            <button type="button" class="btn btn--primary btn-book-call open-modal-btn">
+              ЗАКАЗАТЬ ЗВОНОК
+            </button>
+          </div>
+
+          <div class="section-form__image">
+            @@include('../assets/svg/car-side.svg')
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spaceY-lg bg-img-list-section">
+      <div class="container">
+        <div class="section-list-link">
+          <div class="section-list-link__decore">
+            В ПРОДАЖЕ
+          </div>
+
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            ОЦИНКОВАННЫЕ ЛИСТЫ МЕТАЛЛА ДЛЯ СВАРКИ <br> (размер 120х50 см)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="spaceY-md bg-dark-blue bg-img-about-us-section">
+      <div class="container">
+        <h2>О НАС</h2>
+
+        <div class="about-us-grid">
+          <div class="about-us-item">
+            <div class="icon"></div>
+            <div class="title"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spaceY-lg bg-img-q-a-section">
+      <div class="container">
+        <h2>ВОПРОСЫ И ОТВЕТЫ</h2>
+
+        @@include('../components/Accordion/index.html')
+      </div>
+    </section>
+
+    <section class="spaceY-md bg-dark-blue bg-img-work-section">
+      <div class="container">
+        <h2>КАК МЫ РАБОТАЕМ</h2>
+      </div>
+    </section>
+
+    <section class="spaceY-lg bg-img-foto-section">
+      <div class="container">
+        <h2>ФОТО СКЛАДА</h2>
+      </div>
+    </section>
   </main>
 
   @@include('../components/Footer/index.html')
