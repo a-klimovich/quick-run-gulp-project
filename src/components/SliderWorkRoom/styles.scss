@@ -1,0 +1,28 @@
+@import '../../scss/mixins';
+
+.slider-workroom-wrapper {
+  $arrowSize: 50px;
+
+  position: relative;
+  padding: 0 $arrowSize;
+
+  .workroom-arrow {
+    position: absolute;
+    display: inline-flex;
+    place-items: center;
+    place-content: center;
+    width: $arrowSize;
+    height: $arrowSize;
+    padding: 6px 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    &--prev {
+      transform: rotate(180deg) translateY(50%);
+      left: 0;
+    }
+    &--next {
+      right: 0;
+    }
+  }
+}
