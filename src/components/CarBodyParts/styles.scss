@@ -1,7 +1,18 @@
+@import '../../scss/mixins';
+
 .car-body-parts {
   display: grid;
-  grid-template-columns: minmax(770px, 3fr) 2fr;
+  grid-template-columns: minmax(auto, 770px) minmax(auto, 370px);
   gap: 30px;
+
+  @include xl {
+    grid-template-columns: minmax(auto, 475px) minmax(auto, 222.44px);
+  }
+
+  @include md {
+    grid-template-columns: 1fr;
+    grid: 10px;
+  }
 
   &__card {
     position: relative;
@@ -13,9 +24,34 @@
     line-height: 46px;
     height: calc(var(--indexSize) * 25);
     max-height: 499px;
+    background-color: var(--deep-blue);
+
+    &.active {
+      background-color: var(--dark-blue);
+    }
+
+    @include xl {
+      max-height: 310px;
+    }
+
+    @include md {
+      max-height: 182.74px;
+    }
 
     .title {
       margin-bottom: 26px;
+
+      @include xl {
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: 29px;
+      }
+
+      @include md {
+        font-size: 22px;
+        line-height: 27px;
+      }
+
     }
 
     &--front {
@@ -25,10 +61,61 @@
         position: absolute;
         left: -12%;
       }
+
+      @include xl {
+        padding: 0;
+        padding-top: 21px;
+        padding-left: 30px;
+
+        .car-body {
+          top: 0;
+        }
+
+        svg {
+          max-width: 493.51px;
+        }
+      }
+
+      @include md {
+        .car-body {
+          top: -80px;
+          right: 8%;
+          left: initial;
+          svg {
+            max-width: 290.91px;
+          }
+        }
+      }
     }
 
     &--back {
       padding: 35px 25px 40px;
+
+      @include xl {
+        padding: 0;
+        padding-top: 20px;
+        padding-left: 14px;
+
+        .car-body {
+          position: absolute;
+          top: 5%;
+
+          svg {
+            max-width: 624.51px;
+          }
+        }
+      }
+
+      @include md {
+        .car-body {
+          right: -95px;
+          top: -65px;
+
+          svg {
+            max-width: 341.7px;
+          }
+        }
+      }
     }
   }
 }
