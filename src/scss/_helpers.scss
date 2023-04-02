@@ -9,6 +9,12 @@
   }
 }
 
+@for $i from 1 through 14 {
+  .py-#{$i} {
+    padding: calc(var(--base-padding) * #{$i}) 0;
+  }
+}
+
 .hide-mobile {
   @include md {
     display: none;
@@ -39,14 +45,6 @@
 }
 .bg-dark-blue {
   background-color: var(--dark-blue);
-}
-
-.py-6 {
-  padding: 60px 0;
-}
-
-.py-14 {
-  padding: 140px 0;
 }
 
 .bg-img-form-section,
