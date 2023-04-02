@@ -50,6 +50,22 @@ if (userIcon) {
   const mobileMenuCloseBtn = document.querySelector("#mobile-menu-closer");
   const buttons = document.querySelectorAll(".open-submenu-btn");
 
+  // 
+  const headerHeight = header.offsetHeight;
+  const body = document.body;
+
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > headerHeight) {
+      header.style.position = 'fixed';
+      header.style.top = '0';
+      body.style.paddingTop = `${headerHeight}px`;
+    } else {
+      header.style.position = '';
+      header.style.top = '-20vh';
+      body.style.paddingTop = '';
+    }
+  });
+
   const handleClearHeaderClass = (className) => {
     if (header.classList.contains(className)) {
       header.classList = "header";

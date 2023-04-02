@@ -1,6 +1,9 @@
 @import '../../scss/mixins';
 
 .header {
+  width: 100%;
+  top: -20vh;
+  transition: all 0.444s;
   color: var(--white);
 
   @include xl {
