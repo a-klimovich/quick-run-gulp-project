@@ -187,3 +187,40 @@
     }
   }
 }
+
+.section-work {
+  h2 {
+    margin-bottom: 40px;
+    @include xl {
+      margin-bottom: 22px;
+    }
+    @include md {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    
+    @include xl {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include md {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+}
+
+.section-foto {
+  h2 {
+    margin-bottom: 60px;
+    @include xl {
+      margin-bottom: 22px;
+    }
+  }
+
+  
+}
