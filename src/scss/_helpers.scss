@@ -40,3 +40,45 @@
 .bg-dark-blue {
   background-color: var(--dark-blue);
 }
+
+.py-6 {
+  padding: 60px 0;
+}
+
+.py-14 {
+  padding: 140px 0;
+}
+
+.bg-img-form-section,
+.bg-img-list-section,
+.bg-img-about-us-section,
+.bg-img-q-a-section,
+.bg-img-work-section,
+.bg-img-foto-section,
+.bg-img-mian-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-img-mian-section {
+  background-image: url('../assets/bg-img-mian-section.png');
+}
+.bg-img-form-section {
+  background-image: url('../assets/bg-img-form-section.png');
+}
+.bg-img-list-section {
+  background-image: url('../assets/bg-img-list-section.png');
+}
+.bg-img-about-us-section {
+  background-image: url('../assets/bg-img-about-us-section.png');
+}
+.bg-img-q-a-section {
+  background-image: url('../assets/bg-img-q-a-section.png');
+}
+.bg-img-work-section {
+  background-image: url('../assets/bg-img-work-section.png');
+}
+.bg-img-foto-section {
+  background-image: url('../assets/bg-img-foto-section.png');
+}

@@ -1,0 +1,34 @@
+.car-body-parts {
+  display: grid;
+  grid-template-columns: minmax(770px, 3fr) 2fr;
+  gap: 30px;
+
+  &__card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 13px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    height: calc(var(--indexSize) * 25);
+    max-height: 499px;
+
+    .title {
+      margin-bottom: 26px;
+    }
+
+    &--front {
+      padding: 35px 53px 48px;
+
+      .car-body {
+        position: absolute;
+        left: -12%;
+      }
+    }
+
+    &--back {
+      padding: 35px 25px 40px;
+    }
+  }
+}

@@ -5,6 +5,7 @@
   top: -20vh;
   transition: all 0.444s;
   color: var(--white);
+  z-index: 999;
 
   @include xl {
     svg {
