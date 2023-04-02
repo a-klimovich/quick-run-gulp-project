@@ -146,3 +146,31 @@
     }
   }
 }
+
+.section-about-us {
+  h2 {
+    margin-bottom: 40px;
+
+    @include xl {
+      margin-bottom: 30px;
+    }
+    @include md {
+      margin-bottom: 20px;
+    }
+  }
+
+  .about-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    
+    @include xl {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px 34px;
+    }
+    @include md {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+}

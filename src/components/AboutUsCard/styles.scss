@@ -1,0 +1,26 @@
+@import '../../scss/mixins';
+
+.about-us-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+  border: 1px solid var(--cyan);
+  border-radius: 10px;
+  color: var(--white);
+
+  .title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--cyan);
+    @include clampLine(1);
+  }
+
+  .text {
+    @include clampLine(7);
+    height: 143px;
+  }
+}
