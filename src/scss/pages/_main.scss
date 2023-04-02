@@ -1,3 +1,39 @@
+.section-main {
+  .main-search-form {
+    display: grid;
+    grid-template-columns: minmax(auto, 415px) minmax(auto, 306px) minmax(auto, 131px);
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 50px 0;
+    border-radius: 10px;
+    margin-top: 60px;
+
+    button {
+      text-align: center;
+    }
+
+    .title {
+      display: none;
+      color: var(--white);
+    }
+
+    @include xl {
+      grid-template-columns: minmax(auto, 317.26px) minmax(auto, 233.93px) minmax(auto, 99.71px);
+      padding: 27px 30px 28px;
+    }
+    @include md {
+      grid-template-columns: 1fr;
+      padding: 20px;
+      gap: 10px;
+
+      .title {
+        display: block;
+      }
+    }
+  }
+}
+
 .section-form {
   padding: 150px 0;
 
@@ -219,38 +255,6 @@
     margin-bottom: 60px;
     @include xl {
       margin-bottom: 22px;
-    }
-  }
-
-  #workroom {
-    margin: 0 -15px;
-    @include xl {
-      margin: 0 -10px;
-    }
-
-    .workroom-slide {
-      padding: 0 15px;
-
-      @include xl {
-        padding: 0 10px;
-      }
-
-      img {
-        max-width: 370px;
-        max-height: 370px;
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-
-        @include xl {
-          max-width: 300px;
-          max-height: 300px;
-        }
-        @include md {
-          max-width: 220px;
-          max-height: 220px;
-        }
-      }
     }
   }
 }

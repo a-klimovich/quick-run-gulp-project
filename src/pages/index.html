@@ -6,13 +6,25 @@
   @@include('../components/Header/index.html')
 
   <main>
-    <section class="bg-img-mian-section spaceY-md">
+    <section class="section-main bg-img-mian-section spaceY-md">
       <div class="container">
         @@include('../components/CarBodyParts/index.html')
 
-        <div class="main-search-form">
-          <!-- TODO custom select -->
-        </div>
+        <form class="bg-dark-blue main-search-form">
+          <h2 class="title">ПОИСК ПО АВТО</h2>
+
+          @@include('../components/CustomSelect/index.html', {
+            "name": "brand",
+            "decore": true,
+          })
+          @@include('../components/CustomSelect/index.html', {
+            "name": "variant",
+            "decore": false,
+          })
+          <button type="button" class="btn btn--primary">
+            НАЙТИ
+          </button>
+        </form>
       </div>
     </section>
 
