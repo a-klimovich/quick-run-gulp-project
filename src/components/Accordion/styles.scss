@@ -1,21 +1,8 @@
+@import '../../scss//mixins';
+
 .accordion {
-  .accordion-item {
-    .accordion-header {
-      cursor: pointer;
-      &:hover {
-        background-color: #eee;
-      }
-    }
-    .accordion-content {
-      display: none;
-      &.active {
-        display: block;
-      }
-    }
-    &.active {
-      .accordion-header {
-        background-color: #eee;
-      }
-    }
+  max-width: 700px;
+  @include xl {
+    max-width: 100%;
   }
 }

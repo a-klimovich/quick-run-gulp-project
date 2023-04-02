@@ -1,0 +1,59 @@
+@import '../../../scss/mixins';
+
+.accordion-item {
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 170%;
+
+    @include md {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  .accordion-content {
+    display: none;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 2rem;
+    max-width: 568px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+
+    @include md {
+      max-width: 100%;
+      margin: 0 0 7px 0;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 130%;
+    }
+  }
+
+  .arrow {
+    display: inline-flex;
+    padding: 0 8px;
+
+    svg {
+      width: 16px;
+      height: 14px;
+      transform: rotate(90deg);
+    }
+    svg path {
+      fill: #1C1C1C;
+    }
+  }
+  &.active {
+    .accordion-content {
+      display: block;
+    }
+  }
+}
