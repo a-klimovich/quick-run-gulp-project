@@ -19,30 +19,33 @@
       margin-bottom: 20px;
       color: var(--cyan);
     }
-  
+
     .subtitle {
       margin-bottom: 30px;
       max-width: 637px;
     }
-  
+
     @include xl {
       grid-template-columns: 1.5fr 1fr;
+
       h2 {
         margin-bottom: 15px;
       }
+
       .subtitle {
         margin-bottom: 20px;
         max-width: 425px;
       }
     }
-  
+
     @include md {
       grid-template-columns: 1fr;
-  
+
       h2 {
         margin-bottom: 10px;
         max-width: 235px;
       }
+
       .subtitle {
         margin-bottom: 50px;
         max-width: 173px;
@@ -56,6 +59,7 @@
 
     @include xl {
       bottom: 0;
+
       svg {
         max-width: 367px;
         max-height: 137px;
@@ -64,9 +68,80 @@
 
     @include md {
       bottom: 20%;
+
       svg {
         max-width: 185.14px;
         max-height: 60.1px;
+      }
+    }
+  }
+}
+
+.section-list {
+  @include xl {
+    padding-top: 80px;
+  }
+  @include md {
+    padding-top: 50px;
+  }
+  &__box {
+    position: relative;
+    padding: 46px 42px;
+    background-image: url('../../assets/bg-section-content.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 10px;
+
+    .decore {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-30%, -70%) rotate(-18.03deg);
+      background-color: var(--red);
+      border-radius: 5px;
+      padding: 22px 32px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .text {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    @include xl {
+      padding: 28px 26px 27px;
+      .decore {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 19px 18px;
+        transform: translate(-12%, -60%) rotate(-10.03deg);
+      }
+
+      .text {
+        font-size: 22px;
+        line-height: 27px;
+      }
+    }
+
+    @include md {
+      background-image: none;
+      background-color: var(--deep-blue);
+      padding: 29px 35px 25px;
+
+      .decore {
+        font-size: 15px;
+        line-height: 18px;
+
+      }
+
+      .text {
+        font-size: 20px;
+        line-height: 24px;
       }
     }
   }

@@ -9,28 +9,23 @@
   }
 }
 
-// @for $i from 1 through 14 {
-//   .py-#{$i} {
-//     padding: calc(var(--space) * #{$i}) 0;
-//   }
-// }
 .spaceY-md {
-  padding: var(--space-60);
+  padding: var(--space-60) 0;
   @include xl {
-    padding: calc(var(--space-60) / 2);
+    padding: calc(var(--space-60) / 2) 0;
   }
   @include md {
-    padding: calc(var(--space-60) / 4);
+    padding: calc(var(--space-60) / 4) 0;
   }
 }
 
 .spaceY-lg {
-  padding: var(--space-140);
+  padding: var(--space-140) 0;
   @include xl {
-    padding: calc(var(--space-140) / 2);
+    padding: calc(var(--space-140) / 2) 0;
   }
   @include md {
-    padding: calc(var(--space-140) / 4);
+    padding: calc(var(--space-140) / 4) 0;
   }
 }
 
