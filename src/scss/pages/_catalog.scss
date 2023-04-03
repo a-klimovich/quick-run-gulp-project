@@ -1,0 +1,7 @@
+.section-popular-brands {
+  h2 {
+    margin-bottom: var(--space-60);
+    @include xl {margin-bottom: var(--space-40);}
+    @include md {margin-bottom: var(--space-10);}
+  }
+}
