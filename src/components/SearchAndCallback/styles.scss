@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: minmax(auto, 670px) 1fr;
   gap: 30px;
-  margin-bottom: var(--space-140);
 
   .mobile-title {
     color: var(--white);
@@ -15,7 +14,6 @@
 
   @include xl {
     grid-template-columns: minmax(auto, 478px) 1fr;
-    margin-bottom: var(--space-50);
 
     &__btn {
       padding-top: 10px;
