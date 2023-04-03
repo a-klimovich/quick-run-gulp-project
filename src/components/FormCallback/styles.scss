@@ -34,51 +34,10 @@
     margin: 0 auto;
   }
 
-  .checkbox-container {
-    display: inline-block;
-    position: relative;
-    padding-left: 35px;
+  .checkbox-privat-policy {
     margin-bottom: 12px;
     font-weight: 300;
     font-size: 14px;
     line-height: 170%;
-    cursor: pointer;
-
-    .checkmark {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 24px;
-      width: 24px;
-      border: 1px solid var(--white);
-      border-radius: 5px;
-    }
-
-    input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-    }
-
-    input:checked ~ .checkmark:after {
-      display: block;
-    }
-
-    .checkmark:after {
-      content: "";
-      position: absolute;
-      display: none;
-      left: 8px;
-      top: 4px;
-      width: 6px;
-      height: 12px;
-      border: solid var(--orange);
-      border-width: 0 2px 2px 0;
-      transform: rotate(45deg);
-    }
-
-    input:checked ~ .checkmark:after {
-      display: block;
-    }
   }
 }
