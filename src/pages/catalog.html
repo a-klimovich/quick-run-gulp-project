@@ -1,3 +1,32 @@
-<div class="container">
-  @@include('../components/Breadcrumbs/index.html')
-</div>
+<!DOCTYPE html>
+<html lang="en">
+@@include('../utils/head.html')
+
+<body>
+  @@include('../components/Header/index.html')
+  <div class="container">
+    @@include('../components/Breadcrumbs/index.html')
+  </div>
+
+  <main>
+    <div class="container">
+      @@include('../components/Title/index.html', {
+        "title": "КАТАЛОГ ТОВАРОВ"
+      })
+    </div>
+
+    <div class="container">
+      @@include('../components/SearchAndCallback/index.html')
+    </div>
+  </main>
+
+  @@include('../components/Footer/index.html')
+  @@include('../components/Modal/index.html', {
+    "title": "Обратная связь",
+    "text": "Оставьте своё сообщение и мы ответим на него в ближайшее время.",
+    "name": "form-callback",
+  })
+  @@include('../utils/includes.html')
+</body>
+
+</html>

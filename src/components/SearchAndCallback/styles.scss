@@ -1,0 +1,100 @@
+@import '../../scss/mixins';
+
+.search-and-callback {
+  display: grid;
+  grid-template-columns: minmax(auto, 670px) 1fr;
+  gap: 30px;
+  margin-bottom: var(--space-140);
+
+  .mobile-title {
+    color: var(--white);
+    font-size: 12px;
+    line-height: 15px;
+    display: none;
+  }
+
+  @include xl {
+    grid-template-columns: minmax(auto, 478px) 1fr;
+    margin-bottom: var(--space-50);
+
+    &__btn {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  @include md {
+    grid-template-columns: 1fr;
+
+    &__btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .mobile-title {
+      display: block;
+    }
+  }
+
+  &__from,
+  &__callback {
+    padding: var(--space-50);
+    border-radius: var(--radius-10);
+
+    @include xl {
+      padding: 28px 27px 27px 31px;
+    }
+    @include md {
+      padding: 20px;
+    }
+  }
+
+  &__from {
+    display: grid;
+    grid-template-columns: auto minmax(auto, 131px);
+    gap: 23px;
+    align-items: center;
+
+    @include xl {
+      grid-template-columns: auto minmax(auto, 99.71px);
+      gap: 18px;
+    }
+
+    @include md {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+
+  &__callback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    position: relative;
+
+    p {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      position: absolute;
+      top: 25px;
+      color: var(--cyan);
+
+      @include xl {
+        top: 8px;
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+
+    @include md {
+      p {
+        position: static;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 9px;
+      }
+    }
+  }
+}
