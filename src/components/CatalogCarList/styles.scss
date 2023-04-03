@@ -34,8 +34,9 @@
     @include md {
       font-size: 14px;
       line-height: 17px;
-      max-height: 429.64px;
       margin-bottom: var(--space-20);
+      max-height: fit-content;
+      flex-wrap: nowrap;
     }
   
     li {
