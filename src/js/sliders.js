@@ -3,8 +3,8 @@ $(document).ready(function(){
   $('#workroom').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
-    prevArrow: $('.workroom-arrow--prev'),
-    nextArrow: $('.workroom-arrow--next'),
+    prevArrow: $('.custom-slide-arrow--prev'),
+    nextArrow: $('.custom-slide-arrow--next'),
     infinite: true,
     responsive: [
       {
@@ -24,6 +24,29 @@ $(document).ready(function(){
     ]
   });
 
+  $('#recomendation').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    prevArrow: $('.custom-slide-arrow--prev'),
+    nextArrow: $('.custom-slide-arrow--next'),
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  })
   
   const slidesInRow = () => {
     const countSlides = $('#brand-logo-slider .brand-logo-slide')?.length;
@@ -70,9 +93,10 @@ $(document).ready(function(){
       }
     ]
   })
-  $('.slick-progress').click(function() {
-    var index = $(this).data('slide');
-    $('.slider').slick('slickGoTo', index);
-  });
+
+  // $('.slick-progress').click(function() {
+  //   var index = $(this).data('slide');
+  //   $('.slider').slick('slickGoTo', index);
+  // });
 });
 	

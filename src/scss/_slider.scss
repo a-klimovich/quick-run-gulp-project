@@ -1,18 +1,19 @@
-@import '../../scss/mixins';
 
-.slider-workroom-wrapper {
+// DEFAULT SETTINGS
+
+.slider-wrapper {
   $arrowSize: 50px;
-
   position: relative;
   padding: 0 $arrowSize;
   
-  #workroom {
+  .slider-list {
     margin: 0 -15px;
+
     @include xl {
       margin: 0 -10px;
     }
 
-    .workroom-slide {
+    .slide {
       padding: 0 15px;
 
       @include xl {
@@ -37,24 +38,25 @@
       }
     }
   }
+}
 
-  .workroom-arrow {
-    position: absolute;
-    display: inline-flex;
-    place-items: center;
-    place-content: center;
-    width: $arrowSize;
-    height: $arrowSize;
-    padding: 6px 10px;
-    top: 50%;
-    transform: translateY(-50%);
-  
-    &--prev {
-      transform: rotate(180deg) translateY(50%);
-      left: 0;
-    }
-    &--next {
-      right: 0;
-    }
+.custom-slide-arrow {
+  $arrowSize: 50px;
+  position: absolute;
+  display: inline-flex;
+  place-items: center;
+  place-content: center;
+  width: $arrowSize;
+  height: $arrowSize;
+  padding: 6px 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &--prev {
+    transform: rotate(180deg) translateY(50%);
+    left: 0;
+  }
+  &--next {
+    right: 0;
   }
 }
