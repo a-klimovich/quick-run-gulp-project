@@ -1,7 +1,28 @@
 .add-to-cart-form {
   margin-bottom: 100px;
 
+  .checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .checkbox-label-text {
+      display: flex;
+      white-space: nowrap;
+    }
+
+    .dots {
+      position: relative;
+      display: flex;
+      align-self: flex-end;
+      margin-bottom: 5px;
+      margin: 0 0.5rem 5px 0.5rem;
+      width: 100%;
+      border-bottom: 2px dotted var(--black);
+    }
+  }
+
   &__btns-box {
-    margin-top: 20px;
+    margin-top: 76px;
   }
 }
