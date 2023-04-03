@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../utils/head.html')
+
+<body>
+  @@include('../components/Header/index.html')
+  <div class="container">
+    @@include('../components/Breadcrumbs/index.html')
+  </div>
+
+  <main>
+    <section class="section-cart-table">
+      <div class="container">
+        @@include('../components/CartTable/index.html')
+      </div>
+    </section>
+  </main>
+
+  @@include('../components/Footer/index.html')
+  @@include('../components/Modal/index.html', {
+    "title": "Обратная связь",
+    "text": "Оставьте своё сообщение и мы ответим на него в ближайшее время.",
+    "name": "form-callback",
+  })
+  @@include('../utils/includes.html')
+</body>
+
+</html>

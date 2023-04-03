@@ -1,0 +1,29 @@
+@import '../../scss/mixins';
+
+.cart-table {
+  &__head {
+    display: grid;
+    grid-template-columns: 6fr 2fr 2fr 2fr;
+    font-weight: 700;
+    padding: 15px;
+    border-bottom: 1px solid var(--gary-200);
+    place-items: center;
+
+    @include xl {
+      display: none;
+    }
+
+    .title {
+      margin-right: auto;
+    }
+    .counter {
+      margin-left: 1rem;
+      margin-right: auto;
+    }
+  }
+
+  &__body {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--gary-200);
+  }
+}

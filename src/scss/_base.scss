@@ -15,6 +15,7 @@
   --cyan: #37FFE2;
   --gray: #D9D9D9;
   --gary-100: #E7E7E7;
+  --gary-200: #DFDFDF;
   --orange: #F89E02;
   --bg-gold-liner: linear-gradient(256.07deg, #FFA60C 20.04%, rgba(255, 178, 44, 0.63) 96.91%);
 
@@ -74,6 +75,11 @@ h2,
 
 b {
   font-weight: 700;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--gary-200);
 }
 
 button {

@@ -1,0 +1,27 @@
+<div class="cart-table-item">
+  <div class="image">
+    <img src="@@imageUrl" alt="cart item image">
+  </div>
+
+  <div class="title"><b>@@title</b></div>
+
+  <div class="counter">
+    <button class="counter-btn minus">-</button>
+    <input class="counter-input" type="number" value="@@inputValue" min="0" max="999" name="item_count">
+    <button class="counter-btn plus">+</button>
+  </div>
+
+  <div class="price">
+    <span id="price">@@price</span> <span>руб.</span>
+  </div>
+
+  <div class="total">
+    <div class="summ">
+      <span id="summ">@@summ</span> <span>руб.</span>
+    </div>
+
+    <button type="button" class="remove-item">
+      @@include('../../assets/svg/trash.svg')
+    </button>
+  </div>
+</div>

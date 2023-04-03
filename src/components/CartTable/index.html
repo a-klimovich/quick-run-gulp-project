@@ -1,0 +1,20 @@
+<div class="cart-table">
+  <div class="cart-table__head">
+    <div class="title">Наименование</div>
+    <div class="counter">Количество</div>
+    <div class="price">Цена</div>
+    <div class="total">Сумма</div>
+  </div>
+  
+  <div class="cart-table__body">
+    @@loop('../CartTableItem/index.html', [
+      {
+        "imageUrl": "../../assets/mok-product-img.jpg",
+        "title": "Кузовной порог для Acura - CSX (2006–2011), левый",
+        "inputValue": "1",
+        "price": "200",
+        "summ": "200",
+      }
+    ])
+  </div>
+</div>
