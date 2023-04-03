@@ -1,6 +1,13 @@
+@import '../../scss/mixins';
+
 .product-item-param-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-bottom: 30px;
+  gap: var(--space-20);
+  margin-bottom: var(--space-30);
+
+  @include xl {
+    gap: var(--space-10);
+    margin-bottom: var(--space-20);
+  }
 }

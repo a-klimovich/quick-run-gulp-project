@@ -8,11 +8,16 @@
   transition: all .375s;
   color: var(--black);
   white-space: nowrap;
+  text-align: center;
 
   @include xl {
     font-size: 15px;
     line-height: 18px;
     padding: 15px 16px;
+  }
+
+  @include md {
+    padding: 9px 16px;
   }
 
   &:hover {

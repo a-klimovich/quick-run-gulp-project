@@ -1,10 +1,14 @@
-.add-to-cart-form {
-  margin-bottom: 100px;
+@import '../../scss/mixins';
 
+.add-to-cart-form {
   .checkbox-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @include xl {
+      gap: var(--space-10);
+    }
 
     .checkbox-label-text {
       display: flex;
@@ -23,6 +27,12 @@
   }
 
   &__btns-box {
+    display: flex;
+    gap: var(--space-20);
     margin-top: 76px;
+
+    @include xl {
+      margin-top: var(--space-20);
+    }
   }
 }
