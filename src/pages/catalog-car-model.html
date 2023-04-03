@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../utils/head.html')
+
+<body>
+  @@include('../components/Header/index.html')
+  <div class="container">
+    @@include('../components/Breadcrumbs/index.html')
+  </div>
+
+  <main>
+    <section>
+      <!-- TODO -->
+      <div class="container">
+        <!-- layout style @sidbar-and-content -->
+        <div class="sidbar-and-content"> 
+          @@include('../components/Sidebar/index.html')
+
+          <div class="content">
+            <h1 class="title">Товары для Acura - CSX (2006–2011)</h1>
+
+            <div class="grid">
+              @@include('../components/ProductCard/index.html')
+              @@include('../components/ProductCard/index.html')
+              @@include('../components/ProductCard/index.html')
+              @@include('../components/ProductCard/index.html')
+              @@include('../components/ProductCard/index.html')
+              @@include('../components/ProductCard/index.html')
+              @@include('../components/ProductCard/index.html')
+              @@include('../components/ProductCard/index.html')
+            </div>
+
+            <div class="content-pagination">
+              @@include('../components/Pagination/index.html')
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+  </main>
+
+  @@include('../components/Footer/index.html')
+  @@include('../components/Modal/index.html', {
+    "title": "Обратная связь",
+    "text": "Оставьте своё сообщение и мы ответим на него в ближайшее время.",
+    "name": "form-callback",
+  })
+  @@include('../utils/includes.html')
+</body>
+
+</html>
