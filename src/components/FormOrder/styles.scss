@@ -3,6 +3,13 @@
 .form-order {
   margin-bottom: var(--space-140);
 
+  @include xl {
+    margin-bottom: 90px;
+  }
+  @include md {
+    margin-bottom: var(--space-50);
+  }
+
   .hide {
     display: none;
   }
@@ -107,6 +114,7 @@
     @include md {
       grid-template-columns: 1fr;
       margin-bottom: var(--space-40);
+      gap: 10px 30px;
     }
   }
 
@@ -115,6 +123,13 @@
   }
 
   &__accapt-processing-data {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 170%;
     margin-bottom: var(--space-50);
+
+    @include md {
+      margin-bottom: var(--space-30);
+    }
   }
 }

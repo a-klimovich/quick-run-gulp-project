@@ -17,6 +17,7 @@
   @include md {
     grid-template-columns: minmax(auto, 1fr) 1fr;
     grid-template-rows: 3fr 1fr;
+    gap: var(--space-10) 17px;
   }
 
   .image {

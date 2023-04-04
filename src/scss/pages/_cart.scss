@@ -1,3 +1,10 @@
 .section-cart-table {
   margin-bottom: var(--space-140);
+
+  @include xl {
+    margin-bottom: var(--space-40);
+  }
+  @include md {
+    margin-bottom: var(--space-20);
+  }
 }

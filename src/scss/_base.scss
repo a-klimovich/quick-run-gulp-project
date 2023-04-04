@@ -87,14 +87,27 @@ button {
 }
 
 input, textarea {
-  padding: 15px 32px 16px 34px;
-  border: 1px solid var(--gray);
-  border-radius: 5px;
-
-  &::placeholder {
+  @mixin inputSize {
     font-weight: 400;
     font-size: 18px;
     line-height: 170%;
+
+    @include md {
+      font-size: 14px;
+    }
+  }
+
+  padding: 15px 32px 16px 34px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  @include inputSize;
+
+  @include md {
+    padding: 7px 11px;
+  }
+
+  &::placeholder {
+    @include inputSize;
     color: var(--gray);
   }
 }
