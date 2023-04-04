@@ -5,7 +5,9 @@ $(document).ready(function () {
     node.attr('data-map-center').split(',')
   );
 
-  ymaps.ready(init);
+  if (contactsMap.length) {
+    ymaps.ready(init);
+  }
   
   function init() {
     var myMap = new ymaps.Map("contactsMap", {

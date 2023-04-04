@@ -29,7 +29,7 @@
   &__btns-box {
     display: flex;
     gap: var(--space-20);
-    margin-top: 76px;
+    margin-top: var(--space-70);
 
     @include xl {
       margin-top: var(--space-20);
