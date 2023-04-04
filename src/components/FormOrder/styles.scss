@@ -4,7 +4,7 @@
   margin-bottom: var(--space-140);
 
   @include xl {
-    margin-bottom: 90px;
+    margin-bottom: var(--space-90);
   }
   @include md {
     margin-bottom: var(--space-50);
