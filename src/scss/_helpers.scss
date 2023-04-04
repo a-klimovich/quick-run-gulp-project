@@ -2,7 +2,7 @@
   width: 100%;
   max-width: var(--screen-xl);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 var(--space-20);
 
   @include xl {
     max-width: var(--screen-md);

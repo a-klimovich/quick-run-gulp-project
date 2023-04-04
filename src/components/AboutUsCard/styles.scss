@@ -5,10 +5,10 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px;
-  gap: 20px;
+  padding: var(--space-30);
+  gap: var(--space-20);
   border: 1px solid var(--cyan);
-  border-radius: 10px;
+  border-radius: var(--space-10);
   color: var(--white);
 
   .title {

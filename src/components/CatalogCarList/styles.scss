@@ -6,7 +6,7 @@
   margin-bottom: var(--space-140);
 
   @include xl {
-    margin-bottom: 90px;
+    margin-bottom: var(--space-90);
   }
   @include md {
     margin-bottom: var(--space-50);
@@ -22,7 +22,7 @@
     font-size: 32px;
     line-height: 39px;
     max-height: 650px;
-    gap: 20px;
+    gap: var(--space-20);
     margin-bottom: var(--space-60);
   
     @include xl {
@@ -40,7 +40,7 @@
     }
   
     li {
-      padding-left: 60px;
+      padding-left: var(--space-60);
       position: relative;
   
       &::before {
@@ -50,7 +50,7 @@
         top: 50%;
         transform: translateY(-50%);
         width: 45px;
-        height: 30px;
+        height: var(--space-30);
         background-image: url('../../assets/svg/small-car.svg');
         background-repeat: no-repeat;
         background-position: center;
@@ -59,8 +59,8 @@
   
       @include xl {
         &::before {
-          width: 40px;
-          height: 40px;
+          width: var(--space-40);
+          height: var(--space-40);
         }
       }
       @include md {

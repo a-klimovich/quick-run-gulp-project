@@ -1,7 +1,7 @@
 .sidbar-and-content {
   display: grid;
   grid-template-columns: minmax(auto, 270px) auto;
-  gap: 20px;
+  gap: var(--space-20);
   margin-bottom: var(--space-140);
 
   .content {
@@ -22,20 +22,20 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(200px, 1fr));
-      gap: 30px;
+      gap: var(--space-30);
 
       @include xl {
         grid-template-columns: repeat(2, 1fr);
       }
       @include md {
-        gap: 20px 12px;
+        gap: var(--space-20) 12px;
       }
     }
 
     .content-pagination {
       display: flex;
       justify-content: center;
-      margin-top: 30px;
+      margin-top: var(--space-30);
 
       @include xl {
         margin-top: var(--space-20);
@@ -48,7 +48,7 @@
 
   @include xl {
     grid-template-columns: minmax(auto, 222px) auto;
-    margin-bottom: 90px;
+    margin-bottom: var(--space-90);
   }
   @include md {
     grid-template-columns: 1fr;

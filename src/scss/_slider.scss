@@ -2,7 +2,7 @@
 // DEFAULT SETTINGS
 
 .slider-wrapper {
-  $arrowSize: 50px;
+  $arrowSize: var(--space-50);
   position: relative;
   padding: 0 $arrowSize;
   
@@ -10,14 +10,14 @@
     margin: 0 -15px;
 
     @include xl {
-      margin: 0 -10px;
+      margin: 0 -var(--space-10);
     }
 
     .slide {
       padding: 0 15px;
 
       @include xl {
-        padding: 0 10px;
+        padding: 0 var(--space-10);
       }
 
       img {
@@ -32,8 +32,8 @@
           max-height: 300px;
         }
         @include md {
-          max-width: 220px;
-          max-height: 220px;
+          max-width: 2var(--space-20);
+          max-height: 2var(--space-20);
         }
       }
     }
@@ -41,14 +41,14 @@
 }
 
 .custom-slide-arrow {
-  $arrowSize: 50px;
+  $arrowSize: var(--space-50);
   position: absolute;
   display: inline-flex;
   place-items: center;
   place-content: center;
   width: $arrowSize;
   height: $arrowSize;
-  padding: 6px 10px;
+  padding: 6px var(--space-10);
   top: 50%;
   transform: translateY(-50%);
 

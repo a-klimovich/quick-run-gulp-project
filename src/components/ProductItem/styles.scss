@@ -2,12 +2,12 @@
 
 .product-item {
   font-weight: var(--font-weight-400);
-  font-size: 20px;
+  font-size: var(--font-size-20);
   line-height: 24px;
 
   @include xl {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: var(--font-size);
+    line-height: var(--space-20);
   }
 
   &__info {
@@ -65,7 +65,7 @@
         padding-left: var(--space-20);
         font-weight: var(--font-weight-500);
         font-size: 16px;
-        line-height: 20px;
+        line-height: var(--space-20);
 
         &::before {
           content: "•";

@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     font-weight: var(--font-weight-500);
-    gap: 20px;
+    gap: var(--space-20);
 
     &-title {
       @include clampLine(2);
@@ -32,7 +32,7 @@
     }
     &-price {
       font-size: 16px;
-      line-height: 20px;
+      line-height: var(--space-20);
       white-space: nowrap;
     }
   }

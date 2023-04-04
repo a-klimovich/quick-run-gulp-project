@@ -3,7 +3,7 @@
 .car-body-parts {
   display: grid;
   grid-template-columns: minmax(auto, 770px) minmax(auto, 370px);
-  gap: 30px;
+  gap: var(--space-30);
 
   @include xl {
     grid-template-columns: minmax(auto, 475px) minmax(auto, 222.44px);
@@ -11,7 +11,7 @@
 
   @include md {
     grid-template-columns: 1fr;
-    grid: 10px;
+    grid: var(--space-10);
   }
 
   &__card {
@@ -28,7 +28,7 @@
     }
 
     @include xl {
-      max-height: 310px;
+      max-height: 3var(--space-10);
     }
 
     @include md {
@@ -64,7 +64,7 @@
       @include xl {
         padding: 0;
         padding-top: 21px;
-        padding-left: 30px;
+        padding-left: var(--space-30);
 
         .car-body {
           top: 0;
@@ -88,11 +88,11 @@
     }
 
     &--back {
-      padding: 35px 25px 40px;
+      padding: 35px 25px var(--space-40);
 
       @include xl {
         padding: 0;
-        padding-top: 20px;
+        padding-top: var(--space-20);
         padding-left: 14px;
 
         .car-body {

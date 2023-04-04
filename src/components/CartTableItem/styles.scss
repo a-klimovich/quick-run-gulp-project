@@ -74,7 +74,7 @@
       margin-right: 0.5rem;
 
       @include xl {
-        margin-right: 100px;
+        margin-right: var(--space-100);
       }
 
       @include md {
@@ -98,7 +98,7 @@
 .cart-table-item .counter {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--space-10);
 
   @include xl {
     grid-row: 3;
@@ -141,17 +141,17 @@
     height: 38px;
     text-align: center;
     border: none;
-    background-color: #F5F5F5;
+    background-color: var(--gary-300);
     border-radius: 5px;
-    font-size: 16px;
+    font-size: var(--font-size);
     font-weight: bold;
     padding-left: 0;
     padding-right: 0;
 
     @include md {
-      font-size: 14.3377px;
+      font-size: 14px;
       line-height: 17px;
-      height: 22.7px;
+      height: 22px;
       width: 34px;
     }
   }

@@ -3,7 +3,7 @@
 .search-and-callback {
   display: grid;
   grid-template-columns: minmax(auto, 670px) 1fr;
-  gap: 30px;
+  gap: var(--space-30);
 
   .mobile-title {
     color: var(--white);
@@ -16,8 +16,8 @@
     grid-template-columns: minmax(auto, 478px) 1fr;
 
     &__btn {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: var(--space-10);
+      padding-bottom: var(--space-10);
     }
   }
 
@@ -43,7 +43,7 @@
       padding: 28px 27px 27px 31px;
     }
     @include md {
-      padding: 20px;
+      padding: var(--space-20);
     }
   }
 
@@ -60,7 +60,7 @@
 
     @include md {
       grid-template-columns: 1fr;
-      gap: 10px;
+      gap: var(--space-10);
     }
   }
 
@@ -81,7 +81,7 @@
 
       @include xl {
         top: 8px;
-        font-size: 10px;
+        font-size: var(--font-size-10);
         line-height: 12px;
       }
 

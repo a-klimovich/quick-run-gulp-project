@@ -5,9 +5,9 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding: 50px 0;
-    border-radius: 10px;
-    margin-top: 60px;
+    padding: var(--space-50) 0;
+    border-radius: var(--space-10);
+    margin-top: var(--space-60);
 
     button {
       text-align: center;
@@ -20,12 +20,12 @@
 
     @include xl {
       grid-template-columns: minmax(auto, 317.26px) minmax(auto, 233.93px) minmax(auto, 99.71px);
-      padding: 27px 30px 28px;
+      padding: 27px var(--space-30) 28px;
     }
     @include md {
       grid-template-columns: 1fr;
-      padding: 20px;
-      gap: 10px;
+      padding: var(--space-20);
+      gap: var(--space-10);
 
       .title {
         display: block;
@@ -38,28 +38,28 @@
   padding: 150px 0;
 
   @include xl {
-    padding: 50px 0;
+    padding: var(--space-50) 0;
   }
 
   @include md {
-    padding: 20px 0;
+    padding: var(--space-20) 0;
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 50px;
+    gap: var(--space-50);
     position: relative;
 
     h2 {
-      margin-bottom: 20px;
+      margin-bottom: var(--space-20);
       color: var(--cyan);
-      font-size: 30px;
+      font-size: var(--font-size-30);
       line-height: 37px;
     }
 
     .subtitle {
-      margin-bottom: 30px;
+      margin-bottom: var(--space-30);
       max-width: 637px;
     }
 
@@ -71,7 +71,7 @@
       }
 
       .subtitle {
-        margin-bottom: 20px;
+        margin-bottom: var(--space-20);
         max-width: 425px;
       }
     }
@@ -80,12 +80,12 @@
       grid-template-columns: 1fr;
 
       h2 {
-        margin-bottom: 10px;
+        margin-bottom: var(--space-10);
         max-width: 235px;
       }
 
       .subtitle {
-        margin-bottom: 50px;
+        margin-bottom: var(--space-50);
         max-width: 173px;
       }
     }
@@ -120,7 +120,7 @@
     padding-top: 80px;
   }
   @include md {
-    padding-top: 50px;
+    padding-top: var(--space-50);
   }
   &__box {
     position: relative;
@@ -132,7 +132,7 @@
     text-align: center;
     color: var(--white);
     font-weight: var(--font-weight-700);
-    border-radius: 10px;
+    border-radius: var(--space-10);
 
     .decore {
       position: absolute;
@@ -178,7 +178,7 @@
       }
 
       .text {
-        font-size: 20px;
+        font-size: var(--font-size-20);
         line-height: 24px;
       }
     }
@@ -187,28 +187,28 @@
 
 .section-about-us {
   h2 {
-    margin-bottom: 40px;
+    margin-bottom: var(--space-40);
 
     @include xl {
-      margin-bottom: 30px;
+      margin-bottom: var(--space-30);
     }
     @include md {
-      margin-bottom: 20px;
+      margin-bottom: var(--space-20);
     }
   }
 
   .about-us-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: var(--space-30);
     
     @include xl {
       grid-template-columns: 1fr 1fr;
-      gap: 30px 34px;
+      gap: var(--space-30) 34px;
     }
     @include md {
       grid-template-columns: 1fr;
-      gap: 30px;
+      gap: var(--space-30);
     }
   }
 }
@@ -216,45 +216,45 @@
 .section-questions {
   background-position: initial;
   h2 {
-    margin-bottom: 60px;
+    margin-bottom: var(--space-60);
     @include xl {
       margin-bottom: 25px;
     }
     @include md {
-      margin-bottom: 20px;
+      margin-bottom: var(--space-20);
     }
   }
 }
 
 .section-work {
   h2 {
-    margin-bottom: 40px;
+    margin-bottom: var(--space-40);
     @include xl {
       margin-bottom: 22px;
     }
     @include md {
-      margin-bottom: 20px;
+      margin-bottom: var(--space-20);
     }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: var(--space-30);
     
     @include xl {
       grid-template-columns: 1fr 1fr;
     }
     @include md {
       grid-template-columns: minmax(100%, 1fr);
-      gap: 20px;
+      gap: var(--space-20);
     }
   }
 }
 
 .section-foto {
   h2 {
-    margin-bottom: 60px;
+    margin-bottom: var(--space-60);
     @include xl {
       margin-bottom: 22px;
     }

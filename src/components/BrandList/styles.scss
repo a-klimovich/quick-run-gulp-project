@@ -2,10 +2,10 @@
 
 #brand-logo-slider {
   margin-bottom: var(--space-140);
-  padding-top: 20px;
+  padding-top: var(--space-20);
   
   @include xl {
-    margin-bottom: 90px;
+    margin-bottom: var(--space-90);
   }
 
   @include md {
@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 20px;
+    bottom: var(--space-20);
     width: 100%;
     top: 0;
     left: 0;

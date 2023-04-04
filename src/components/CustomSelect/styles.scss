@@ -15,7 +15,7 @@
     max-width: 100%;
     background: #FFFFFF;
     border-radius: 5px;
-    min-height: 50px;
+    min-height: var(--space-50);
     padding: 0 $paddingSize;
     font-weight: var(--font-weight-700);
     font-size: 14px;
@@ -31,7 +31,7 @@
     }
 
     &.has-decore {
-      padding-left: 140px;
+      padding-left: var(--space-140);
       overflow: hidden;
 
       .decore {
@@ -39,7 +39,7 @@
       }
 
       @include xl {
-        padding-left: 110px;
+        padding-left: 1var(--space-10);
       }
 
       @include md {
@@ -89,7 +89,7 @@
           padding-left: var(--space-10);
         }
         &::before {
-          width: 100px;
+          width: var(--space-100);
         }
       }
     }
@@ -98,12 +98,12 @@
       display: flex;
       align-items: center;
       margin-left: auto;
-      padding-right: 10px;
+      padding-right: var(--space-10);
 
       svg {
         transform: rotate(90deg);
         width: 13px;
-        height: 20px;
+        height: var(--space-20);
       }
 
       svg path {
@@ -130,14 +130,14 @@
     overflow-y: auto;
     z-index: 100;
     margin: 0;
-    padding: 20px 0;
+    padding: var(--space-20) 0;
     scrollbar-color: dark;
     scrollbar-width: thin;
     overscroll-behavior: contain;
 
     &::-webkit-scrollbar {
       width: 7px;
-      background-color: #F8F9FA;
+      background-color: var(--gary-300);
       padding: 5px;
     }
   

@@ -1,10 +1,10 @@
 .form-callback {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--space-20);
 
   label {
-    margin-top: 10px;
+    margin-top: var(--space-10);
     font-weight: bold;
   }
 
@@ -14,7 +14,7 @@
 
   textarea {
     height: 161px;
-    margin-bottom: 10px;
+    margin-bottom: var(--space-10);
   }
 
   button[type=submit] {
