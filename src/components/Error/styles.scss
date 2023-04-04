@@ -1,0 +1,23 @@
+@import '../../scss/mixins';
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: var(--space-50);
+  margin-top: var(--space-160);
+
+  svg {
+    max-width: 100%;
+    width: minmax(822.34px, 200.29px);
+  }
+
+  @include xl {
+    margin-top: var(-space-90);
+  }
+
+  @include md {
+    margin-top: var(-space-50);
+  }
+}

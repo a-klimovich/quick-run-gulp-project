@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../utils/head.html')
+<script src="https://api-maps.yandex.ru/2.1/?apikey=8736d410-ba83-448f-860f-fa48b74f0572&lang=en_US" type="text/javascript">
+</script>
+
+<body>
+  @@include('../components/Header/index.html')
+  <div class="container">
+    @@include('../components/Breadcrumbs/index.html')
+  </div>
+
+  <main>
+    <section class="section-contacts-and-map">
+      <div class="container">
+        <!-- TODO вынести элементы дискрипшн в дефолтные настройки h3, p ... -->
+        <div class="contacts-wrapper">
+          <div class="contacts-content">
+            <div class="contacts-content__box">
+              <h3>Режим работы</h3>
+              <p>ПН-ПТ: 8.00–22.00</p>
+              <p>СБ-ВС: 8.00–20.00</p>
+            </div>
+            <div class="contacts-content__box">
+              <h3>Телефон</h3>
+              <p><a href="tel:+375447798877">+375 (44) 779–88–77</a></p>
+            </div>
+            <div class="contacts-content__box">
+              <h3 class="contacts-content__social">
+                Связь с нами:
+                <a class="svg-hover-cyan" href="#">
+                  @@include("../assets/svg/telegram.svg")
+                </a>
+              </h3>
+            </div>
+            <div class="contacts-content__box">
+              <h3>Адрес</h3>
+              <p>Павильон 55/16 Авторынок «Малиновка»</p>
+            </div>
+          </div>
+
+          <div id="contactsMap" data-map-center="55.76, 37.64" class="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include('../components/Footer/index.html')
+  @@include('../components/Modal/index.html', {
+    "title": "Обратная связь",
+    "text": "Оставьте своё сообщение и мы ответим на него в ближайшее время.",
+    "name": "form-callback",
+  })
+  @@include('../utils/includes.html')
+</body>
+
+</html>

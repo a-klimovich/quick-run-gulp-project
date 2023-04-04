@@ -9,12 +9,14 @@
 @import './button';
 @import './checkbox';
 @import './slider';
+@import './description';
 
 // pages 👇
 @import './pages/main';
 @import './pages/catalog';
 @import './pages/product-item';
 @import './pages/cart';
+@import './pages/contacts';
 
 // layout's
 @import './layout/sidbar-and-content.scss';

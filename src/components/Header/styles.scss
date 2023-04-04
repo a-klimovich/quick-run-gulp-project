@@ -49,7 +49,7 @@
       }
     }
 
-    & > div:not(.social) {
+    &>div:not(.social) {
       display: grid;
       grid-template-columns: max-content 1fr;
       gap: 10px;
@@ -67,25 +67,22 @@
       }
     }
 
-    & > .social {
+    &>.social {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
 
       @include md {
         gap: 8px;
       }
-      
-      a, button {
+
+      a,
+      button {
         display: inline-block;
-        &:hover {
-          svg path {
-            fill: var(--cyan)
-          }
-        }
       }
 
       .show-mobile {
         display: none;
+
         @include md {
           display: inline-block;
         }
@@ -98,6 +95,7 @@
       @include xl {
         display: initial;
       }
+
       @include md {
         display: none;
       }
@@ -141,7 +139,7 @@
         display: none;
         font-weight: 400;
 
-        & > li {
+        &>li {
           margin-bottom: $elementListSpace;
         }
       }
@@ -152,8 +150,8 @@
         display: none;
         padding-left: 20px;
         margin-top: $elementListSpace;
-  
-        & > :last-child {
+
+        &> :last-child {
           margin-bottom: 0;
         }
       }
@@ -174,6 +172,7 @@
       padding: 0px 10px;
       margin-left: auto;
       transition: all .433s;
+
       svg {
         width: 10px;
         height: 9px;
@@ -238,6 +237,7 @@
   }
 
   &.show-phone {
+
     .header__menu__phone,
     .mobile-menu-head,
     .btn-header-menu-book-call {

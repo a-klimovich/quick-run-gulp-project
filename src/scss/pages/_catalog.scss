@@ -7,6 +7,8 @@
       margin-bottom: var(--space-40);
       margin-top: var(--space-50);
     }
-    @include md {margin-bottom: var(--space-10)}
+    @include md {
+      margin-bottom: var(--space-10)
+    }
   }
 }

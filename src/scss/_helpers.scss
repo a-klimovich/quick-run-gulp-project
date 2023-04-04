@@ -29,6 +29,12 @@
   }
 }
 
+.svg-hover-cyan {
+  svg:hover path {
+    fill: var(--cyan);
+  }
+}
+
 
 .overflow-h {
   overflow: hidden;
