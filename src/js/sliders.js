@@ -60,7 +60,6 @@ $(document).ready(function(){
       return countSlides / 4;
     }
     if (screenSize >= 1200) {
-      console.log(21);
       return countSlides / 6;
     }
   };
@@ -93,10 +92,5 @@ $(document).ready(function(){
       }
     ]
   })
-
-  // $('.slick-progress').click(function() {
-  //   var index = $(this).data('slide');
-  //   $('.slider').slick('slickGoTo', index);
-  // });
 });
 	

@@ -85,3 +85,16 @@ hr {
 button {
   cursor: pointer;
 }
+
+input, textarea {
+  padding: 15px 32px 16px 34px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: var(--gray);
+  }
+}

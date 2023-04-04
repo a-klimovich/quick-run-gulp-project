@@ -20,5 +20,23 @@
         input.val(currentValue + 1);
       }
     });
+
+    if ($(this).val() === "delivery") {
+      $('#placeInput').hide();
+      $('#cityInput').show();
+    } else {
+      $('#placeInput').show();
+      $('#cityInput').hide();
+    }
+
+    $('input[name="delivery_method"]').change(function() {
+      if ($(this).val() === "delivery") {
+        $('#placeInput').hide();
+        $('#cityInput').show();
+      } else {
+        $('#placeInput').show();
+        $('#cityInput').hide();
+      }
+    });
   });
 })();

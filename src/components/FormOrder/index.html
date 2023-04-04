@@ -1,0 +1,46 @@
+<form class="form-order" action="#">
+  <p class="form-order__section-title"><b>Способ доставки <span>*</span></b></p>
+
+  <div class="form-order__delivery-method">
+    <input hide class="hide" type="radio" id="delivery" name="delivery_method" value="delivery">
+    <label class="btn btn--transparent" for="delivery">
+      ДОСТАВКА
+    </label>
+    
+    <input class="hide" type="radio" id="pickup" name="delivery_method" value="pickup" checked>
+    <label class="btn btn--transparent" for="pickup">
+      САМОВЫВОЗ
+    </label>
+
+    <input id="cityInput" type="text" name="city" value="" placeholder="Город">
+
+    <input id="placeInput" type="text" name="place" readonly value="Авторынок «Малиновка» пав. 55/16">
+  </div>
+
+  <p class="form-order__section-title"><b>Способ оплаты</b></p>
+  <div class="form-order__payment-method">
+    <input class="hide" type="checkbox" id="payment_on_delivery" name="payment_method">
+    <label class="btn btn--transparent" for="payment_on_delivery">ОПЛАТА ПРИ ПОЛУЧЕНИИ</label><br>
+  </div>
+
+  <p class="form-order__section-title"><b>Личные данные <span>*</span></b></p>
+  <div class="form-order__personal-data">
+    <input type="text" id="name" name="name" placeholder="Имя *">
+    <input type="text" id="surname" name="surname" placeholder="Фамилия *">
+    <input type="tel" id="phone" name="phone" placeholder="Телефон *">
+  </div>
+
+  <div class="form-order__totla">
+    <b>ИТОГО: <span id="order-total">200</span> руб.</b>
+  </div>
+
+  <div class="form-order__accapt-processing-data">
+    <label class="checkbox-container checkbox-container-redius-5 checkbox-container--border-gray ">
+      <input type="checkbox" id="agree" name="agree" value="agree">
+      <span class="checkmark checkmark--orange"></span>
+      <span class="checkbox-label-text">Я согласен(-на) на обработку персональных данных</span>
+    </label>
+  </div>
+
+  <button class="btn btn--primary form-order__send" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+</form>
