@@ -19,7 +19,7 @@
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr min-content;
     gap: 40px;
-    font-weight: 800;
+    font-weight: var(--font-weight-800);
     line-height: 20px;
 
     @include xl {
@@ -103,12 +103,10 @@
   }
 
   &__menu {
-    $elementListSpace: 15px;
-
     display: flex;
     place-items: center;
     padding: 27px 0 28px;
-    gap: 41px;
+    gap: var(--space-40);
 
     @include xl {
       padding: 11px 0 10px;
@@ -120,12 +118,20 @@
       gap: 0;
     }
 
+    a:hover {
+      color: var(--orange);
+    }
+
     ul {
       display: flex;
-      gap: 41px;
-      font-weight: 600;
+      gap: var(--space-40);
+      font-weight: var(--font-weight-600);
       font-size: 18px;
       line-height: 22px;
+
+      li.active > a {
+        color: var(--orange);
+      }
 
       @include xl {
         justify-content: space-between;
@@ -137,10 +143,10 @@
 
       @include md {
         display: none;
-        font-weight: 400;
+        font-weight: var(--font-weight-400);
 
-        &>li {
-          margin-bottom: $elementListSpace;
+        & > li {
+          margin-bottom: var(--space-15);
         }
       }
     }
@@ -149,14 +155,14 @@
       ul {
         display: none;
         padding-left: 20px;
-        margin-top: $elementListSpace;
+        margin-top: var(--space-15);
 
-        &> :last-child {
+        & > :last-child {
           margin-bottom: 0;
         }
       }
 
-      &.active {
+      &.show-child-list {
         ul {
           display: block;
         }
@@ -196,7 +202,7 @@
     place-items: center;
     gap: 25px;
     margin-bottom: 20px;
-    font-weight: 800;
+    font-weight: var(--font-weight-800);
   }
 
   .mobile-menu-head {
@@ -209,7 +215,7 @@
     align-items: center;
     padding: 8px 20px 10px;
     color: var(--black);
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     line-height: 20px;
 
     .closer {

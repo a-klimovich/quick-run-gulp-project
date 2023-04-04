@@ -54,6 +54,8 @@
     h2 {
       margin-bottom: 20px;
       color: var(--cyan);
+      font-size: 30px;
+      line-height: 37px;
     }
 
     .subtitle {
@@ -129,7 +131,7 @@
     background-size: cover;
     text-align: center;
     color: var(--white);
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     border-radius: 10px;
 
     .decore {
@@ -244,7 +246,7 @@
       grid-template-columns: 1fr 1fr;
     }
     @include md {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(100%, 1fr);
       gap: 20px;
     }
   }

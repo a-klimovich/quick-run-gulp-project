@@ -22,7 +22,7 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    font-weight: 500;
+    font-weight: var(--font-weight-500);
     gap: 20px;
 
     &-title {

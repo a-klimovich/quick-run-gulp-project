@@ -4,17 +4,19 @@
   gap: 20px;
   margin-bottom: var(--space-140);
 
-  //? styles for sidebar are described in the component "Sidebar"
-
   .content {
     display: flex;
     flex-direction: column;
 
     .title {
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 29px;
-      margin-bottom: 30px;
+      margin-bottom: var(--space-30);
+
+      @include xl {
+        margin-bottom: 12px;
+      }
+      @include md {
+        margin-bottom: var(--space-10);
+      }
     }
 
     .grid {

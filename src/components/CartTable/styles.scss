@@ -4,7 +4,7 @@
   &__head {
     display: grid;
     grid-template-columns: 6fr 2fr 2fr 2fr;
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     padding: 15px;
     border-bottom: 1px solid var(--gary-200);
     place-items: center;

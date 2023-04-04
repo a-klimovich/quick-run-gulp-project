@@ -55,7 +55,7 @@
     }
 
     button.addEventListener("click", () => {
-      parent.classList.toggle("active");
+      parent.classList.toggle("show-child-list");
     });
   });
 })();

@@ -72,7 +72,7 @@
     position: relative;
 
     p {
-      font-weight: 700;
+      font-weight: var(--font-weight-700);
       font-size: 14px;
       line-height: 17px;
       position: absolute;
@@ -84,14 +84,11 @@
         font-size: 10px;
         line-height: 12px;
       }
-    }
 
-    @include md {
-      p {
+      @include md {
         position: static;
         font-size: 12px;
         line-height: 15px;
-        margin-bottom: 9px;
       }
     }
   }

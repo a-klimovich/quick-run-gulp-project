@@ -1,7 +1,7 @@
 @import '../../scss/mixins';
 
 .product-item {
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
   font-size: 20px;
   line-height: 24px;
 
@@ -9,7 +9,7 @@
     font-size: 16px;
     line-height: 20px;
   }
-  
+
   &__info {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 370px);
@@ -44,38 +44,44 @@
   }
 
   &__description {
-    .description-title {
+    h3 {
       margin-bottom: var(--space-30);
+
       @include xl {
         margin-bottom: var(--space-20);
       }
-      @include md {
-        margin-bottom: var(--space-10);
-      }
-    }
-    .description-text {
-      margin-bottom: var(--space-20);
-      @include xl {
-        margin-bottom: var(--space-10);
-      }
-    }
-    .description-list {
-      column-count: 2;
 
       @include md {
-        column-count: 1;
+        margin-bottom: var(--space-10);
       }
+    }
+
+    .description-list {
+      column-count: 2;
 
       li {
         position: relative;
         margin-bottom: 5px;
-        padding-left : var(--space-20);
+        padding-left: var(--space-20);
+        font-weight: var(--font-weight-500);
+        font-size: 16px;
+        line-height: 20px;
+
         &::before {
           content: "•";
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
           left: calc(var(--space-10) / 2);
+        }
+      }
+
+      @include md {
+        column-count: 1;
+
+        li {
+          font-size: 14px;
+          line-height: 17px;
         }
       }
     }

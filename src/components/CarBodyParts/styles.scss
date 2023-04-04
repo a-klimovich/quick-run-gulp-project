@@ -19,9 +19,6 @@
     overflow: hidden;
     border-radius: 13px;
     color: var(--white);
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 46px;
     height: calc(var(--indexSize) * 25);
     max-height: 499px;
     background-color: var(--deep-blue);
@@ -39,12 +36,14 @@
     }
 
     .title {
+      font-size: 38px;
+      line-height: 46px;
       margin-bottom: 26px;
 
       @include xl {
-        margin-bottom: 0;
         font-size: 24px;
         line-height: 29px;
+        margin-bottom: 0;
       }
 
       @include md {
