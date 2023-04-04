@@ -1,15 +1,17 @@
 <div class="search-and-callback">
   <form class="bg-dark-blue search-and-callback__from">
-    <h2 class="mobile-title">ПОИСК ПО АВТО</h2>
-
-    @@include('../CustomSelect/index.html', {
-      "name": "brand",
-      "decore": true,
-    })
-
-    <button type="button" class="btn btn--primary search-and-callback__btn">
-      НАЙТИ
-    </button>
+    <div class="form-box">
+      <h2 class="mobile-title">ПОИСК ПО АВТО</h2>
+  
+      @@include('../CustomSelect/index.html', {
+        "name": "brand",
+        "decore": true,
+      })
+  
+      <button type="button" class="btn btn--primary search-and-callback__btn">
+        НАЙТИ
+      </button>
+    </div>
   </form>
 
   <div class="bg-dark-blue search-and-callback__callback">

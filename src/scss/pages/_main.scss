@@ -1,34 +1,50 @@
 .section-main {
   .main-search-form {
-    display: grid;
-    grid-template-columns: minmax(auto, 415px) minmax(auto, 306px) minmax(auto, 131px);
-    place-items: center;
+    display: flex;
     justify-content: center;
-    gap: 15px;
     padding: var(--space-50) 0;
-    border-radius: var(--space-10);
     margin-top: var(--space-60);
-
-    button {
-      text-align: center;
-    }
-
-    .title {
-      display: none;
-      color: var(--white);
-    }
+    border-radius: var(--space-10);
 
     @include xl {
-      grid-template-columns: minmax(auto, 317.26px) minmax(auto, 233.93px) minmax(auto, 99.71px);
       padding: 27px var(--space-30) 28px;
     }
+
     @include md {
-      grid-template-columns: 1fr;
+      justify-content: initial;
       padding: var(--space-20);
-      gap: var(--space-10);
+    }
+
+    &>div {
+      display: grid;
+      grid-template-columns: minmax(auto, 415px) minmax(auto, 306px) minmax(auto, 131px);
+      gap: 15px;
+
+      button {
+        text-align: center;
+      }
 
       .title {
-        display: block;
+        display: none;
+        color: var(--white);
+      }
+
+      @include xl {
+        grid-template-columns: minmax(auto, 317.26px) minmax(auto, 233.93px) minmax(auto, 99.71px);
+      }
+
+      @include md {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: var(--space-10);
+
+        button {
+          width: 100%;
+        }
+
+        .title {
+          display: block;
+        }
       }
     }
   }
@@ -119,9 +135,11 @@
   @include xl {
     padding-top: 80px;
   }
+
   @include md {
     padding-top: var(--space-50);
   }
+
   &__box {
     position: relative;
     padding: 46px 42px;
@@ -153,6 +171,7 @@
 
     @include xl {
       padding: 28px 26px 27px;
+
       .decore {
         font-size: 15px;
         line-height: 18px;
@@ -192,6 +211,7 @@
     @include xl {
       margin-bottom: var(--space-30);
     }
+
     @include md {
       margin-bottom: var(--space-20);
     }
@@ -201,11 +221,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--space-30);
-    
+
     @include xl {
       grid-template-columns: 1fr 1fr;
       gap: var(--space-30) 34px;
     }
+
     @include md {
       grid-template-columns: 1fr;
       gap: var(--space-30);
@@ -215,11 +236,14 @@
 
 .section-questions {
   background-position: initial;
+
   h2 {
     margin-bottom: var(--space-60);
+
     @include xl {
       margin-bottom: 25px;
     }
+
     @include md {
       margin-bottom: var(--space-20);
     }
@@ -229,9 +253,11 @@
 .section-work {
   h2 {
     margin-bottom: var(--space-40);
+
     @include xl {
       margin-bottom: 22px;
     }
+
     @include md {
       margin-bottom: var(--space-20);
     }
@@ -241,10 +267,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--space-30);
-    
+
     @include xl {
       grid-template-columns: 1fr 1fr;
     }
+
     @include md {
       grid-template-columns: minmax(100%, 1fr);
       gap: var(--space-20);
@@ -255,6 +282,7 @@
 .section-foto {
   h2 {
     margin-bottom: var(--space-60);
+
     @include xl {
       margin-bottom: 22px;
     }

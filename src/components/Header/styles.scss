@@ -17,7 +17,6 @@
   &__info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr min-content;
-    align-items: center;
     gap: var(--space-40);
     font-weight: var(--font-weight-800);
     line-height: var(--space-20);
@@ -32,6 +31,7 @@
 
     @include md {
       display: flex;
+      align-items: center;
       gap: initial;
       padding: 8px 0;
     }
@@ -50,10 +50,9 @@
     }
 
     & > div:not(.social) {
-      display: grid;
-      grid-template-columns: max-content 1fr;
-      gap: var(--space-10);
+      display: flex;
       align-items: center;
+      gap: var(--space-10);
 
       .location {
         display: grid;
@@ -76,8 +75,8 @@
     }
 
     &>.social {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      align-items: center;
 
       @include md {
         gap: 8px;
@@ -113,6 +112,7 @@
   &__menu {
     display: flex;
     place-items: center;
+    place-content: center;
     padding: 27px 0 28px;
     gap: var(--space-40);
 
