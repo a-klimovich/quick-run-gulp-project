@@ -1,11 +1,22 @@
 (() => {
   $(document).ready(function () {
-    // Get the input and buttons
     const input = $(".counter-input");
     const minusBtn = $(".counter-btn.minus");
     const plusBtn = $(".counter-btn.plus");
+    const placeInput = $("#placeInput");
+    const cityInput = $("#cityInput");
 
-    // Subtract 1 from the input value when the minus button is clicked
+    //* hide usles input
+    // const toggleInputDelivery = (node) => {
+    //   if (node.val() === "delivery") {
+    //     placeInput.hide();
+    //     cityInput.show();
+    //   } else {
+    //     placeInput.show();
+    //     cityInput.hide();
+    //   }
+    // }
+
     minusBtn.on("click", function () {
       let currentValue = parseInt(input.val());
       if (currentValue > 0) {
@@ -13,30 +24,18 @@
       }
     });
 
-    // Add 1 to the input value when the plus button is clicked
     plusBtn.on("click", function () {
       let currentValue = parseInt(input.val());
       if (currentValue < 999) {
         input.val(currentValue + 1);
       }
     });
+    
+    //* hide usles input
+    // toggleInputDelivery($(this));
 
-    if ($(this).val() === "delivery") {
-      $('#placeInput').hide();
-      $('#cityInput').show();
-    } else {
-      $('#placeInput').show();
-      $('#cityInput').hide();
-    }
-
-    $('input[name="delivery_method"]').change(function() {
-      if ($(this).val() === "delivery") {
-        $('#placeInput').hide();
-        $('#cityInput').show();
-      } else {
-        $('#placeInput').show();
-        $('#cityInput').hide();
-      }
-    });
+    // $('input[name="delivery_method"]').change(function() {
+    //   toggleInputDelivery($(this));
+    // });
   });
 })();

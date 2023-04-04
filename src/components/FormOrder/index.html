@@ -2,19 +2,21 @@
   <p class="form-order__section-title"><b>Способ доставки <span>*</span></b></p>
 
   <div class="form-order__delivery-method">
-    <input hide class="hide" type="radio" id="delivery" name="delivery_method" value="delivery">
-    <label class="btn btn--transparent" for="delivery">
-      ДОСТАВКА
-    </label>
+    <div>
+      <input hide class="hide" type="radio" id="delivery" name="delivery_method" value="delivery">
+      <label class="btn btn--transparent" for="delivery">
+        ДОСТАВКА
+      </label>
+      <input id="cityInput" type="text" name="city" value="" placeholder="Город">
+    </div>
     
-    <input class="hide" type="radio" id="pickup" name="delivery_method" value="pickup" checked>
-    <label class="btn btn--transparent" for="pickup">
-      САМОВЫВОЗ
-    </label>
-
-    <input id="cityInput" type="text" name="city" value="" placeholder="Город">
-
-    <input id="placeInput" type="text" name="place" readonly value="Авторынок «Малиновка» пав. 55/16">
+    <div>
+      <input class="hide" type="radio" id="pickup" name="delivery_method" value="pickup" checked>
+      <label class="btn btn--transparent" for="pickup">
+        САМОВЫВОЗ
+      </label>
+      <input id="placeInput" type="text" name="place" readonly value="Авторынок «Малиновка» пав. 55/16">
+    </div>
   </div>
 
   <p class="form-order__section-title"><b>Способ оплаты</b></p>
