@@ -14,24 +14,46 @@
     place-items: initial;
   }
 
-  .image{
+  @include md {
+    grid-template-columns: minmax(auto, 1fr) 1fr;
+    grid-template-rows: 3fr 1fr;
+  }
+
+  .image {
     @include xl {
       grid-row: 1 / span 5;
       display: flex;
+    }
+
+    @include md {
+      grid-row: 1 / span 3;
     }
   }
 
   .title {
     align-self: flex-start;
+
     @include xl {
       grid-row: 1 / span 2;
+      @include clampLine(3);
+    }
+
+    @include md {
+      @include clampLine(4);
     }
   }
 
-  .price{
+  .price {
+    display: inline-flex;
+
     @include xl {
       grid-row: 4;
     }
+  }
+
+  .price__prefix,
+  .summ__prefix {
+    margin-right: 1rem;
   }
 
   .total {
@@ -41,17 +63,29 @@
       grid-row: 5;
     }
 
+    @include md {
+      grid-column: 1 / span 2;
+    }
+
     .summ {
       display: inline-flex;
       align-items: center;
       margin-right: 0.5rem;
+
+      @include xl {
+        margin-right: 100px;
+      }
+
+      @include md {
+        margin-right: auto;
+      }
     }
 
     .remove-item {
       &:hover svg path {
         fill: var(--cyan);
       }
-      
+
       svg {
         width: 24px;
         height: 24px;
@@ -69,6 +103,10 @@
     grid-row: 3;
   }
 
+  @include md {
+    gap: 5px;
+  }
+
   .counter-btn {
     display: flex;
     place-items: center;
@@ -84,6 +122,17 @@
     &.minus {
       padding-bottom: 7px;
     }
+
+    @include md {
+      font-size: 21.5065px;
+      line-height: 26px;
+      height: 22.7px;
+      padding: 5px 7px 5px;
+
+      &.minus {
+        padding-bottom: 8px;
+      }
+    }
   }
 
   .counter-input {
@@ -95,5 +144,12 @@
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
+
+    @include md {
+      font-size: 14.3377px;
+      line-height: 17px;
+      height: 22.7px;
+      width: 34px;
+    }
   }
 }

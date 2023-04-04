@@ -46,6 +46,13 @@
   }
 }
 
+.show-table {
+  display: none;
+  @include xl {
+    display: block;
+  }
+}
+
 .btn-burger {
   @include burger;
   display: none;
