@@ -7,6 +7,7 @@
   justify-content: center;
   row-gap: var(--space-50);
   margin-top: var(--space-160);
+  margin-bottom: var(--space-140);
 
   svg {
     max-width: 100%;
@@ -15,9 +16,11 @@
 
   @include xl {
     margin-top: var(-space-90);
+    margin-bottom: var(--space-90);
   }
 
   @include md {
     margin-top: var(-space-50);
+    margin-bottom: var(--space-50);
   }
 }
