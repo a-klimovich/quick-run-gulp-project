@@ -3,7 +3,6 @@
 .cart-table-item {
   display: grid;
   grid-template-columns: minmax(auto, 170px) 4fr 2fr 2fr 2fr;
-  place-items: center;
   gap: var(--space-30);
 
   @include xl {
@@ -11,7 +10,6 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 2fr 1fr;
     gap: var(--space-10) var(--space-30);
-    place-items: initial;
   }
 
   @include md {
@@ -46,6 +44,8 @@
 
   .price {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
     @include xl {
       grid-row: 4;

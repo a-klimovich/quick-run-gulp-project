@@ -2,7 +2,7 @@
   .main-search-form {
     display: grid;
     grid-template-columns: minmax(auto, 415px) minmax(auto, 306px) minmax(auto, 131px);
-    align-items: center;
+    place-items: center;
     justify-content: center;
     gap: 15px;
     padding: var(--space-50) 0;

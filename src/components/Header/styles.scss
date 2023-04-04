@@ -16,8 +16,8 @@
 
   &__info {
     display: grid;
-    place-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr min-content;
+    align-items: center;
     gap: var(--space-40);
     font-weight: var(--font-weight-800);
     line-height: var(--space-20);
@@ -49,11 +49,19 @@
       }
     }
 
-    &>div:not(.social) {
+    & > div:not(.social) {
       display: grid;
       grid-template-columns: max-content 1fr;
       gap: var(--space-10);
       align-items: center;
+
+      .location {
+        display: grid;
+      }
+
+      .link-phone {
+        white-space: nowrap;
+      }
 
       @include xl {
         svg {

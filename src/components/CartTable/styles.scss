@@ -7,7 +7,7 @@
     font-weight: var(--font-weight-700);
     padding: 15px;
     border-bottom: 1px solid var(--gary-200);
-    place-items: center;
+    text-align: center;
 
     @include xl {
       display: none;
