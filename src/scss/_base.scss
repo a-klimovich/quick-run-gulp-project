@@ -70,6 +70,13 @@ body {
   grid-template-columns: minmax(100%, 1fr);
 }
 
+main {
+  background-image: url('../assets/bg-steve-johnson.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1,
 .h1 {
   font-weight: var(--font-weight-700);

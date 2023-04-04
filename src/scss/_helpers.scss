@@ -29,6 +29,21 @@
   }
 }
 
+.content-select-mobile {
+  display: none;
+
+  h3 {
+    margin-bottom: var(--space-10);
+  }
+  padding: var(--space-20);
+  border-radius: var(--radius-10);
+  margin-bottom: var(--space-10);
+
+  @include md {
+    display: block;
+  }
+}
+
 .svg-hover-cyan {
   svg:hover path {
     fill: var(--cyan);

@@ -39,6 +39,11 @@
         font-size: 14px;
         line-height: 17px;
         height: 100%;
+
+        &:hover {
+          background: var(--gary-100);
+          box-shadow: var(--box-shadow-inset);
+        }
       }
 
       @include xl {
