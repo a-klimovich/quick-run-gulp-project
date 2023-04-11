@@ -63,8 +63,8 @@
 
       @include xl {
         padding: 0;
-        padding-top: 21px;
-        padding-left: var(--space-30);
+        padding-top: var(--space-20);
+        padding-left: 14px;
 
         .car-body {
           top: 0;
@@ -76,6 +76,7 @@
       }
 
       @include md {
+        padding-top: var(--space-10);
         .car-body {
           top: -80px;
           right: 8%;
@@ -106,6 +107,7 @@
       }
 
       @include md {
+        padding-top: var(--space-10);
         .car-body {
           right: -95px;
           top: -65px;

@@ -4,15 +4,17 @@
     const minusBtn = $(".counter-btn.minus");
     const plusBtn = $(".counter-btn.plus");
     const placeInput = $("#placeInput");
+    const deliveryPlaceInput = $("#deliveryPlaceInput");
     const cityInput = $("#cityInput");
 
-    //* hide usles input
     const toggleInputDelivery = (node) => {
       if (node.val() === "delivery") {
         placeInput.hide();
+        deliveryPlaceInput.show();
         cityInput.show();
       } else {
         placeInput.show();
+        deliveryPlaceInput.hide();
         cityInput.hide();
       }
     }

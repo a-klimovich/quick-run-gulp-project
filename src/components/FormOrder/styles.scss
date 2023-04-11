@@ -18,6 +18,21 @@
     }
   }
 
+  &__delivery-method,
+  &__payment-method {
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 65px;
+      cursor: pointer;
+
+      @include md {
+        min-height: 38px;
+      }
+    }
+  }
+
   &__delivery-method {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,6 +42,7 @@
     div {
       display: grid;
       grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
       row-gap: var(--space-30);
     }
 
@@ -41,11 +57,6 @@
     @include md {
       grid-template-columns: 1fr;
       margin-bottom: var(--space-40);
-    }
-
-    label {
-      display: block;
-      cursor: pointer;
     }
 
     input[type="radio"] + label {
@@ -72,11 +83,6 @@
     @include md {
       grid-template-columns: 1fr;
       margin-bottom: var(--space-40);
-    }
-
-    label {
-      display: block;
-      cursor: pointer;
     }
     
     input[type="checkbox"] + label {
