@@ -52,7 +52,10 @@
       display: grid;
       grid-template-columns: auto minmax(auto, 131px);
       gap: 23px;
-      text-align: center;
+
+      .decore {
+        text-align: center;
+      }
   
       @include xl {
         grid-template-columns: auto minmax(auto, 99.71px);

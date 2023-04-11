@@ -26,6 +26,7 @@
 
     $(document).on("click", function (e) {
       if (!$select.has(e.target).length) {
+        $head.removeClass('open')
         $select.find(".select__list").removeClass("open");
       }
     });

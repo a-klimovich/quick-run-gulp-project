@@ -146,6 +146,17 @@
     }
   }
 
+  // max width select list with decore
+  &__head.has-decore ~ &__list {
+    margin-left: 120px;
+    @include xl {
+      margin-left: 90px;
+    }
+    @include md {
+      margin-left: auto;
+    }
+  }
+
   &__item {
     position: relative;
     padding: 5px 26px;
