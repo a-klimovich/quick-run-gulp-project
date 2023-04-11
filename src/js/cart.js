@@ -7,15 +7,15 @@
     const cityInput = $("#cityInput");
 
     //* hide usles input
-    // const toggleInputDelivery = (node) => {
-    //   if (node.val() === "delivery") {
-    //     placeInput.hide();
-    //     cityInput.show();
-    //   } else {
-    //     placeInput.show();
-    //     cityInput.hide();
-    //   }
-    // }
+    const toggleInputDelivery = (node) => {
+      if (node.val() === "delivery") {
+        placeInput.hide();
+        cityInput.show();
+      } else {
+        placeInput.show();
+        cityInput.hide();
+      }
+    }
 
     minusBtn.on("click", function () {
       let currentValue = parseInt(input.val());
@@ -31,11 +31,10 @@
       }
     });
     
-    //* hide usles input
-    // toggleInputDelivery($(this));
+    toggleInputDelivery($(this));
 
-    // $('input[name="delivery_method"]').change(function() {
-    //   toggleInputDelivery($(this));
-    // });
+    $('input[name="delivery_method"]').change(function() {
+      toggleInputDelivery($(this));
+    });
   });
 })();

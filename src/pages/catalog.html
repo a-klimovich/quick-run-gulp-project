@@ -4,27 +4,19 @@
 
 <body>
   @@include('../components/Header/index.html')
-  <div class="container">
-    @@include('../components/Breadcrumbs/index.html')
-  </div>
 
   <main>
     <div class="container">
+      @@include('../components/Breadcrumbs/index.html')
       @@include('../components/Title/index.html', {
         "title": "КАТАЛОГ ТОВАРОВ"
       })
-    </div>
-
-    <div class="container">
       @@include('../components/SearchAndCallback/index.html')
-    </div>
-
-    <section class="section-popular-brands">
-      <div class="container">
+      <section class="section-popular-brands mb-last-section">
         <h2 class="h1">ПОПУЛЯРНЫЕ МОДЕЛИ АВТОМОБИЛЕЙ</h2>
         @@include('../components/BrandList/index.html')
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   @@include('../components/Footer/index.html')

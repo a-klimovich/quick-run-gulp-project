@@ -4,21 +4,16 @@
 
 <body>
   @@include('../components/Header/index.html')
-  <div class="container">
-    @@include('../components/Breadcrumbs/index.html')
-  </div>
-
   <main>
-    <section class="section-cart-table">
-      <div class="container">
+    <div class="container">
+      @@include('../components/Breadcrumbs/index.html')
+      <section class="section-cart-table">
         @@include('../components/CartTable/index.html')
-      </div>
-    </section>
-    <section>
-      <div class="container">
+      </section>
+      <section class="mb-last-section">
         @@include('../components/FormOrder/index.html')
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   @@include('../components/Footer/index.html')

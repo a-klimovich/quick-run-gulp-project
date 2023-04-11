@@ -4,40 +4,35 @@
 
 <body>
   @@include('../components/Header/index.html')
-  <div class="container">
-    @@include('../components/Breadcrumbs/index.html')
-  </div>
 
   <main>
-    <section>
-      <div class="container">
-        <div class="sidbar-and-content"> 
-          @@include('../components/Sidebar/index.html')
+    <div class="container">
+      @@include('../components/Breadcrumbs/index.html')
+      
+      <div class="sidbar-and-content mb-last-section"> 
+        @@include('../components/Sidebar/index.html')
 
-          <div class="content">
-            <h1 class="h3 title">Ремонтный порог для Acura - CSX (2006–2011)</h1>
+        <div class="content">
+          <h1 class="h3 title">Ремонтный порог для Acura - CSX (2006–2011)</h1>
 
-            <div class="bg-dark-blue content-select-mobile">
-              <h3 class="text-white">КАТАЛОГ</h3>
-              
-              @@include('../components/CustomSelect/index.html', {
-                "name": "brand",
-                "decore": false,
-              })
-            </div>
-
-            @@include('../components/ProductItem/index.html')
+          <div class="bg-dark-blue content-select-mobile">
+            <h3 class="text-white">КАТАЛОГ</h3>
+            
+            @@include('../components/CustomSelect/index.html', {
+              "name": "brand",
+              "decore": false,
+            })
           </div>
+
+          @@include('../components/ProductItem/index.html')
         </div>
       </div>
-    </section>
 
-    <section class="section-slider-recommendation">
-      <div class="container">
+      <section class="section-slider-recommendation mb-last-section">
         <h2>ВАС МОЖЕТ ЗАИНТЕРЕСОВАТЬ</h2>
         @@include('../components/SliderRecommendation/index.html')
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   @@include('../components/Footer/index.html')

@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: minmax(auto, 270px) auto;
   gap: var(--space-20);
-  margin-bottom: var(--space-140);
 
   .content {
     display: flex;
@@ -48,11 +47,9 @@
 
   @include xl {
     grid-template-columns: minmax(auto, 222px) auto;
-    margin-bottom: var(--space-90);
   }
   @include md {
     grid-template-columns: 1fr;
-    margin-bottom: var(--space-50);
 
     .sidebar {
       display: none;

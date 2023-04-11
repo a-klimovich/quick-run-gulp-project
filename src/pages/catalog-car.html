@@ -4,26 +4,21 @@
 
 <body>
   @@include('../components/Header/index.html')
-  <div class="container">
-    @@include('../components/Breadcrumbs/index.html')
-  </div>
 
   <main>
     <div class="container">
+      @@include('../components/Breadcrumbs/index.html')
+
       @@include('../components/Title/index.html', {
         "title": "КАТАЛОГ ТОВАРОВ"
       })
-    </div>
 
-    <div class="container">
       @@include('../components/SearchAndCallback/index.html')
-    </div>
 
-    <section class="section-car-list">
-      <div class="container">
+      <section class="section-car-list mb-last-section">
         @@include('../components/CatalogCarList/index.html')
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   @@include('../components/Footer/index.html')

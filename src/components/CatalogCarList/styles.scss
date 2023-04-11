@@ -3,14 +3,6 @@
 
 .catalog-car-list-wrapper {
   margin-top: var(--space-60);
-  margin-bottom: var(--space-140);
-
-  @include xl {
-    margin-bottom: var(--space-90);
-  }
-  @include md {
-    margin-bottom: var(--space-50);
-  }
 
   .catalog-car-list {
     display: flex;

@@ -6,43 +6,41 @@
 
 <body>
   @@include('../components/Header/index.html')
-  <div class="container">
-    @@include('../components/Breadcrumbs/index.html')
-  </div>
 
   <main>
-    <section class="section-contacts-and-map">
-      <div class="container">
-        <!-- TODO вынести элементы дискрипшн в дефолтные настройки h3, p ... -->
+    <div class="container">
+      @@include('../components/Breadcrumbs/index.html')
+      <section class="section-contacts-and-map mb-last-section">
         <div class="contacts-wrapper">
           <div class="contacts-content">
-            <div class="contacts-content__box">
-              <h3>Режим работы</h3>
-              <p>ПН-ПТ: 8.00–22.00</p>
-              <p>СБ-ВС: 8.00–20.00</p>
-            </div>
-            <div class="contacts-content__box">
-              <h3>Телефон</h3>
-              <p><a href="tel:+375447798877">+375 (44) 779–88–77</a></p>
-            </div>
-            <div class="contacts-content__box">
-              <h3 class="contacts-content__social">
-                Связь с нами:
-                <a class="svg-hover-cyan" href="#">
-                  @@include("../assets/svg/telegram.svg")
-                </a>
-              </h3>
-            </div>
-            <div class="contacts-content__box">
-              <h3>Адрес</h3>
-              <p>Павильон 55/16 Авторынок «Малиновка»</p>
-            </div>
+            <h3>Режим работы</h3>
+            <br><br>
+            <p>ПН-ПТ: 8.00–22.00</p>
+            <p>СБ-ВС: 8.00–20.00</p>
+            <br><br>
+            
+            <h3>Телефон</h3>
+            <br>
+            <p><a href="tel:+375447798877">+375 (44) 779–88–77</a></p>
+            <br>
+            
+            <h3 class="contacts-content__social">
+              Связь с нами:
+              <a class="svg-hover-cyan" href="#">
+                @@include("../assets/svg/telegram.svg")
+              </a>
+            </h3>
+            <br><br><br><br>
+            
+            <h3>Адрес</h3>
+            <br>
+            <p>Павильон 55/16 Авторынок «Малиновка»</p>
           </div>
 
           <div id="contactsMap" data-map-center="55.76, 37.64" class="map"></div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   @@include('../components/Footer/index.html')

@@ -1,16 +1,7 @@
 @import '../../scss/mixins';
 
 #brand-logo-slider {
-  margin-bottom: var(--space-140);
   padding-top: var(--space-20);
-  
-  @include xl {
-    margin-bottom: var(--space-90);
-  }
-
-  @include md {
-    margin-bottom: var(--space-50);
-  }
 
   .brand-logo-slide {
     margin: 0 -15px;
