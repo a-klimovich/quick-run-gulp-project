@@ -31,6 +31,16 @@
     gap: var(--space-20);
     margin-top: var(--space-70);
 
+    .btn--add-to-cart:hover {
+      background-color: transparent;
+      color: var(--black);
+      border-color: var(--dark-blue);
+    }
+
+    .btn--custom-callback:hover {
+      color: var(--black);
+    }
+
     @include xl {
       margin-top: var(--space-20);
     }
