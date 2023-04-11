@@ -1,15 +1,21 @@
 <div class="car-body-parts">
-  <div class="car-body-parts__card car-body-parts__card--front active">
-    <h2 class="title">КУЗОВНЫЕ ПОРОГИ</h2>
-    <div class="car-body">
-      @@include('../../assets/svg/car-front.svg')
-    </div>
+  <div>
+    <input type="radio" name="car_body_part" value="front" id="carBodyFront" checked>
+    <label class="car-body-parts__card car-body-parts__card--front" for="carBodyFront">
+      <h2 class="title">КУЗОВНЫЕ ПОРОГИ</h2>
+      <div class="car-body">
+        @@include('../../assets/svg/car-front.svg')
+      </div>
+    </label>
   </div>
 
-  <div class="car-body-parts__card car-body-parts__card--back">
-    <h2 class="title">ЗАДНИЕ АРКИ</h2>
-    <div class="car-body">
-      @@include('../../assets/svg/car-right-side.svg')
-    </div>
+  <div>
+    <input type="radio" name="car_body_part" value="back" id="carBodyBack">
+    <label class="car-body-parts__card car-body-parts__card--back" for="carBodyBack">
+      <h2 class="title">ЗАДНИЕ АРКИ</h2>
+      <div class="car-body">
+        @@include('../../assets/svg/car-right-side.svg')
+      </div>
+    </label>
   </div>
 </div>

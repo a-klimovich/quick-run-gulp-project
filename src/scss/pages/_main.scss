@@ -13,6 +13,7 @@
     @include md {
       justify-content: initial;
       padding: var(--space-20);
+      margin-top: var(--space-20);
     }
 
     &>div {

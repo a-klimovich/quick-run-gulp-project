@@ -14,18 +14,21 @@
     grid: var(--space-10);
   }
 
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__card {
+    display: block;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
     border-radius: 13px;
     color: var(--white);
     height: calc(var(--indexSize) * 25);
     max-height: 499px;
     background-color: var(--deep-blue);
-
-    &.active {
-      background-color: var(--dark-blue);
-    }
 
     @include xl {
       max-height: 310px;
@@ -118,5 +121,14 @@
         }
       }
     }
+  }
+
+  input[type=radio]:checked ~ label {
+    background-color: var(--dark-blue);
+  }
+
+  input[type=radio] {
+    padding: 0;
+    border: none;
   }
 }

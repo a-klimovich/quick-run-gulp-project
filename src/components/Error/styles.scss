@@ -9,18 +9,49 @@
   margin-top: var(--space-160);
   margin-bottom: var(--space-140);
 
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
   svg {
     max-width: 100%;
-    width: minmax(822.34px, 200.29px);
+    width: 822.34px;
+    height: 365.42px;
   }
 
   @include xl {
-    margin-top: var(-space-90);
+    margin-top: var(--space-90);
     margin-bottom: var(--space-90);
+    row-gap: var(--space-30);
+
+    h1 {
+      font-size: 22px;
+      line-height: 27px;
+    }
+
+    svg {
+      max-width: 100%;
+      width: 456.84px;
+      height: 203px;
+    }
   }
 
   @include md {
-    margin-top: var(-space-50);
+    margin-top: var(--space-50);
     margin-bottom: var(--space-50);
+    row-gap: 15px;
+    text-align: center;
+
+    h1 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    svg {
+      max-width: 100%;
+      width: 200.29px;
+      height: 89px;
+    }
   }
 }
