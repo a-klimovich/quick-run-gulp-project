@@ -1,9 +1,9 @@
-# [norejko](#)
+# [quick-run-gulp](#)
 ___
 
 ### Steps to Start 👇
 
-**Node**: v19.4.0
+**Node**: v18+
 **Npm**: v9.2.0
 
 > npm install
