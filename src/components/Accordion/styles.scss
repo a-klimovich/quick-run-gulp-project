@@ -1,8 +1,0 @@
-@import '../../scss//mixins';
-
-.accordion {
-  max-width: 700px;
-  @include xl {
-    max-width: 100%;
-  }
-}
